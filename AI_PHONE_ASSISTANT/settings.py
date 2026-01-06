@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework_simplejwt",
     "django_filters",
     "debug_toolbar",
     "rest_framework",
@@ -105,6 +106,12 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        "LOCATION": "otp-cache",
+    }
+}
 
 
 # Static files (CSS, JavaScript, Images)
@@ -115,3 +122,8 @@ AUTH_USER_MODEL = "accounts.User"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+# REST_FRAMEWORK = {
+#     "DEFAULT_AUTHENTICATION_CLASSES": (
+#         # "rest_framework_simplejwt.authentication.JWTAuthentication",
+#     )
+# }
