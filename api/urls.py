@@ -1,17 +1,6 @@
-from rest_framework.routers import DefaultRouter
-from price_list.views import (
-    CategoryViewSet,
-    BrandViewSet,
-    DeviceModelViewSet,
-    RepairTypeViewSet,
-    PriceListViewSet,
-)
+from django.urls import path, include
 
-router = DefaultRouter()
-router.register("categories", CategoryViewSet)
-router.register("brands", BrandViewSet)
-router.register("device-models", DeviceModelViewSet)
-router.register("repair-types", RepairTypeViewSet)
-router.register("price-list", PriceListViewSet)
-
-urlpatterns = router.urls
+urlpatterns = [
+    path("services/", include("price_list.urls")),
+    path("call/", include("callLogs.urls")),
+]

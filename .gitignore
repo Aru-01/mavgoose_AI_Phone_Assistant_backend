@@ -4,3 +4,5 @@ AI_PHONE_ASSISTANT/__pycache__
 api/__pycache__
 price_list/__pycache__
 db.sqlite3
+callLogs/__pycache__
+

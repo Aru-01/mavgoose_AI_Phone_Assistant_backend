@@ -1,0 +1,47 @@
+from rest_framework import serializers
+from callLogs.models import (
+    CallSession,
+    CallTranscript,
+)
+from price_list.models import RepairType
+
+
+class CallTranscriptSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CallTranscript
+        fields = ["speaker", "message", "timestamp"]
+        read_only_fields = ["timestamp"]
+
+
+class CallSessionSerializer(serializers.ModelSerializer):
+    transcripts = CallTranscriptSerializer(many=True)
+    issue_name = serializers.ReadOnlyField(source="issue.name")
+
+    class Meta:
+        model = CallSession
+        fields = [
+            "id",
+            "phone_number",
+            "issue",
+            "issue_name",
+            "call_type",
+            "outcome",
+            "duration",
+            "started_at",
+            "ended_at",
+            "audio_url",
+            "transcripts",
+            "created_at",
+        ]
+        read_only_fields = ["id", "created_at"]
+
+    def create(self, validated_data):
+        transcripts_data = validated_data.pop("transcripts", [])
+
+        call = CallSession.objects.create(**validated_data)
+
+        transcripts = [CallTranscript(call=call, **t) for t in transcripts_data]
+        CallTranscript.objects.bulk_create(transcripts)
+
+        return call
+
