@@ -6,5 +6,5 @@ class IsAdminUserRole(BasePermission):
         return (
             request.user
             and request.user.is_authenticated
-            and request.user.role == "ADMIN"
+            and request.user.role == "SUPER_ADMIN"
         )
