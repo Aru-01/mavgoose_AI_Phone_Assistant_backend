@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from accounts.managers import CustomUserManager
+from store.models import Store
 
 
 # Create your models here.
@@ -14,6 +15,13 @@ class User(AbstractUser):
 
     username = None
     email = models.EmailField(unique=True)
+    store = models.ForeignKey(
+        Store,
+        on_delete=models.CASCADE,
+        related_name="users",
+        null=True,
+        blank=True,
+    )
     first_name = models.CharField(max_length=150)
     last_name = models.CharField(max_length=150)
     state_location = models.TextField(blank=True, null=True)

@@ -23,6 +23,7 @@ class CallSessionSerializer(serializers.ModelSerializer):
             "id",
             "phone_number",
             "issue",
+            "store",
             "issue_name",
             "call_type",
             "outcome",
@@ -44,4 +45,3 @@ class CallSessionSerializer(serializers.ModelSerializer):
         CallTranscript.objects.bulk_create(transcripts)
 
         return call
-

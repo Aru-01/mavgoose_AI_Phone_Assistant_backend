@@ -10,18 +10,9 @@ from rest_framework.mixins import (
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
+from api.permissions import IsAdminUserRole
 from accounts.models import User
-from accounts.serializers import (
-    UserSerializer,
-    SelfProfileSerializer,
-    RegisterSerializer,
-    LoginSerializer,
-    ChangePasswordSerializer,
-    ForgotPasswordSerializer,
-    VerifyOtpSerializer,
-    ResetPasswordSerializer,
-)
-from accounts.permissions import IsAdminUserRole
+from accounts import serializers as sz
 
 
 class UserViewSet(
@@ -32,7 +23,7 @@ class UserViewSet(
     GenericViewSet,
 ):
     queryset = User.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = sz.UserSerializer
     permission_classes = [IsAdminUserRole]
     http_method_names = ["get", "patch", "delete"]
 
@@ -41,11 +32,11 @@ class SelfProfileView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        serializer = SelfProfileSerializer(request.user)
+        serializer = sz.SelfProfileSerializer(request.user)
         return Response(serializer.data)
 
     def patch(self, request):
-        serializer = SelfProfileSerializer(
+        serializer = sz.SelfProfileSerializer(
             request.user, data=request.data, partial=True
         )
         serializer.is_valid(raise_exception=True)
@@ -55,7 +46,7 @@ class SelfProfileView(APIView):
 
 class RegisterView(APIView):
     def post(self, request):
-        serializer = RegisterSerializer(data=request.data)
+        serializer = sz.RegisterSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
         user = serializer.save()
@@ -75,7 +66,7 @@ class RegisterView(APIView):
 
 class LoginView(APIView):
     def post(self, request):
-        serializer = LoginSerializer(data=request.data)
+        serializer = sz.LoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
         return Response(
@@ -94,7 +85,7 @@ class ChangePasswordView(APIView):
     permission_classes = [IsAuthenticated]
 
     def post(self, request):
-        serializer = ChangePasswordSerializer(
+        serializer = sz.ChangePasswordSerializer(
             data=request.data,
             context={"request": request},
         )
@@ -109,7 +100,7 @@ class ChangePasswordView(APIView):
 
 class ForgotPasswordView(APIView):
     def post(self, request):
-        serializer = ForgotPasswordSerializer(data=request.data)
+        serializer = sz.ForgotPasswordSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
 
@@ -121,7 +112,7 @@ class ForgotPasswordView(APIView):
 
 class VerifyOtpView(APIView):
     def post(self, request):
-        serializer = VerifyOtpSerializer(data=request.data)
+        serializer = sz.VerifyOtpSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
 
@@ -133,7 +124,7 @@ class VerifyOtpView(APIView):
 
 class ResetPasswordView(APIView):
     def post(self, request):
-        serializer = ResetPasswordSerializer(data=request.data)
+        serializer = sz.ResetPasswordSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
 

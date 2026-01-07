@@ -25,14 +25,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "drf_yasg",
     "rest_framework_simplejwt",
     "django_filters",
     "debug_toolbar",
     "rest_framework",
     "api",
+    "store",
     "accounts",
     "price_list",
     "callLogs",
+    "call_transfer",
 ]
 
 MIDDLEWARE = [

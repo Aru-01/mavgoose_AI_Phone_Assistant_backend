@@ -1,4 +1,5 @@
 from django.db import models
+from store.models import Store
 
 
 # Create your models here.
@@ -45,6 +46,9 @@ class ServiceStatus(models.TextChoices):
 
 
 class PriceList(models.Model):
+    store = models.ForeignKey(
+        Store, on_delete=models.CASCADE, related_name="price_lists"
+    )
     category = models.ForeignKey(
         Category, on_delete=models.CASCADE, related_name="price_list_by_category"
     )
@@ -66,10 +70,10 @@ class PriceList(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
 
     class Meta:
         unique_together = (
+            "store",
             "device_model",
             "repair_type",
         )

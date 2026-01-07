@@ -1,34 +1,27 @@
 from rest_framework import viewsets
 from django.db.models import F
 from price_list.models import Category, Brand, PriceList, RepairType, DeviceModel
-from price_list.serializers import (
-    CategorySerializer,
-    BrandSerializer,
-    RepairTypeSerializer,
-    PriceListReadSerializer,
-    PriceListWriteSerializer,
-    DeviceModelSerializer,
-)
+from price_list import serializers as sz
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
-    serializer_class = CategorySerializer
+    serializer_class = sz.CategorySerializer
 
 
 class BrandViewSet(viewsets.ModelViewSet):
     queryset = Brand.objects.select_related("category").all()
-    serializer_class = BrandSerializer
+    serializer_class = sz.BrandSerializer
 
 
 class DeviceModelViewSet(viewsets.ModelViewSet):
     queryset = DeviceModel.objects.select_related("brand", "brand__category").all()
-    serializer_class = DeviceModelSerializer
+    serializer_class = sz.DeviceModelSerializer
 
 
 class RepairTypeViewSet(viewsets.ModelViewSet):
     queryset = RepairType.objects.all()
-    serializer_class = RepairTypeSerializer
+    serializer_class = sz.RepairTypeSerializer
 
 
 class PriceListViewSet(viewsets.ModelViewSet):
@@ -38,5 +31,5 @@ class PriceListViewSet(viewsets.ModelViewSet):
 
     def get_serializer_class(self):
         if self.action in ["list", "retrieve"]:
-            return PriceListReadSerializer
-        return PriceListWriteSerializer
+            return sz.PriceListReadSerializer
+        return sz.PriceListWriteSerializer

@@ -57,6 +57,7 @@ class PriceListReadSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "category_name",
+            "store",
             "brand_name",
             "device_model_name",
             "repair_type_name",
@@ -81,6 +82,7 @@ class PriceListWriteSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "category",
+            "store",
             "brand",
             "device_model",
             "repair_type",

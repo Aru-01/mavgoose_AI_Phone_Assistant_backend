@@ -5,4 +5,5 @@ api/__pycache__
 price_list/__pycache__
 db.sqlite3
 callLogs/__pycache__
-
+call_transfer/__pycache__
+store/__pycache__
