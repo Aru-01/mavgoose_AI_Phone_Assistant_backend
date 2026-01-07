@@ -1,31 +1,35 @@
 from rest_framework.viewsets import GenericViewSet
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.views import APIView
-from rest_framework.mixins import (
-    ListModelMixin,
-    RetrieveModelMixin,
-    UpdateModelMixin,
-    DestroyModelMixin,
-)
+from rest_framework import mixins
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from api.permissions import IsAdminUserRole
-from accounts.models import User
+from accounts.models import User, UserRole
 from accounts import serializers as sz
 
 
+
 class UserViewSet(
-    ListModelMixin,
-    RetrieveModelMixin,
-    UpdateModelMixin,
-    DestroyModelMixin,
+    mixins.CreateModelMixin,
+    mixins.ListModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.DestroyModelMixin,
     GenericViewSet,
 ):
     queryset = User.objects.all()
     serializer_class = sz.UserSerializer
     permission_classes = [IsAdminUserRole]
-    http_method_names = ["get", "patch", "delete"]
+    http_method_names = ["get", "post", "patch", "delete"]
+
+    def create(self, request, *args, **kwargs):
+        if request.user.role != UserRole.SUPER_ADMIN:
+            return Response(
+                {"detail": "Only super admin can create new users."}, status=403
+            )
+        return super().create(request, *args, **kwargs)
 
 
 class SelfProfileView(APIView):
@@ -130,4 +134,16 @@ class ResetPasswordView(APIView):
 
         return Response(
             {"message": "Password reset successfully"}, status=status.HTTP_200_OK
+        )
+
+
+class ResendOtpView(APIView):
+    def post(self, request):
+        serializer = sz.ResendOtpSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+
+        return Response(
+            {"message": "OTP sent to email"},
+            status=status.HTTP_200_OK,
         )

@@ -1,8 +1,8 @@
 import random
 from django.utils import timezone
-
-from django.utils import timezone
-from datetime import timedelta
+from django.core.cache import cache
+from django.template.loader import render_to_string
+from django.core.mail import EmailMessage
 
 
 def human_readable_time_ago(timestamp):
@@ -36,3 +36,21 @@ def human_readable_time_ago(timestamp):
 
 def generate_otp():
     return str(random.randint(100000, 999999))
+
+
+def send_otp_email(email):
+    otp = generate_otp()
+
+    cache.set(f"pwd_reset_otp_{email}", otp, timeout=300)
+
+    subject = "🔒 Verify Your Account"
+
+    html_content = render_to_string("emails/verify_email.html", {"OTP": otp})
+
+    email = EmailMessage(
+        subject=subject,
+        body=html_content,
+        to=[email],
+    )
+    email.content_subtype = "html"
+    email.send()

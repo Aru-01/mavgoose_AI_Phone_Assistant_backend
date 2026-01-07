@@ -1,4 +1,6 @@
 .venv
+.env
+
 accounts/__pycache__
 AI_PHONE_ASSISTANT/__pycache__
 api/__pycache__

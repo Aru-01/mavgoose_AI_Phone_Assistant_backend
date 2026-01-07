@@ -1,9 +1,10 @@
 from django.contrib.auth import authenticate
 from django.core.cache import cache
+from django.utils import timezone
 from rest_framework import serializers
 from rest_framework_simplejwt.tokens import RefreshToken
 from accounts.models import User
-from accounts.utils import generate_otp, human_readable_time_ago
+from accounts.utils import human_readable_time_ago, send_otp_email
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -11,11 +12,34 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ["id", "email", "first_name", "last_name", "role", "last_active"]
-        read_only_fields = ["id", "email", "first_name", "last_name", "last_active"]
+        fields = [
+            "id",
+            "email",
+            "first_name",
+            "last_name",
+            "role",
+            "store",
+            "last_active",
+            "password",
+        ]
+        read_only_fields = ["id", "last_active"]
+        extra_kwargs = {"password": {"write_only": True}}
 
     def get_last_active(self, obj):
+        if not obj.last_login:
+            return "Never active"
+        diff = (timezone.now() - obj.last_login).total_seconds()
+        if diff < 60:
+            return "Active now"
         return human_readable_time_ago(obj.last_login)
+
+    def create(self, validated_data):
+        password = validated_data.pop("password", None)
+        user = User.objects.create(**validated_data)
+        if password:
+            user.set_password(password)
+            user.save()
+        return user
 
 
 class SelfProfileSerializer(serializers.ModelSerializer):
@@ -44,7 +68,6 @@ class RegisterSerializer(serializers.ModelSerializer):
 
         user = User.objects.create_user(password=password, **validated_data)
 
-        # send_otp_email(user.email)
         return user
 
 
@@ -102,12 +125,9 @@ class ForgotPasswordSerializer(serializers.Serializer):
 
     def save(self):
         email = self.validated_data["email"]
-        otp = generate_otp()
 
-        cache.set(f"pwd_reset_otp_{email}", otp, timeout=300)
-
-        # send_otp_email(email, otp)
-        print("OTP:", otp)  # dev only
+        send_otp_email(email)
+        # print("OTP:", otp)  # dev only
 
 
 class VerifyOtpSerializer(serializers.Serializer):
@@ -164,3 +184,28 @@ class ResetPasswordSerializer(serializers.Serializer):
         cache.delete(f"pwd_reset_verified_{email}")
 
         return user
+
+
+class ResendOtpSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+
+    def validate_email(self, value):
+        if not User.objects.filter(email=value).exists():
+            raise serializers.ValidationError("User not found")
+        return value
+
+    def save(self):
+        email = self.validated_data["email"]
+        cooldown_key = f"pwd_reset_resend_{email}"
+
+        # Check if user can resend OTP (30 sec cooldown)
+        if cache.get(cooldown_key):
+            raise serializers.ValidationError(
+                "OTP recently sent. Please wait 30 seconds before resending."
+            )
+
+        # Send OTP again
+        send_otp_email(email)
+
+        # Set 30 sec cooldown
+        cache.set(cooldown_key, True, timeout=30)
