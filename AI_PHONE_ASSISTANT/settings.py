@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-zji$-jha5m-%b!^5%*8ho#x^f=bdvr$0sg)o^oj6+f#3^%#kmu"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["172.252.13.97", "127.0.0.1"]
 
@@ -116,12 +116,17 @@ CACHES = {
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
-STATIC_URL = "static/"
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+
 AUTH_USER_MODEL = "accounts.User"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
 # REST_FRAMEWORK = {
 #     "DEFAULT_AUTHENTICATION_CLASSES": (
 #         # "rest_framework_simplejwt.authentication.JWTAuthentication",
