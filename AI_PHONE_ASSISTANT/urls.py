@@ -8,11 +8,17 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Snippets API",
+        title="AI Phone Assistant",
         default_version="v1",
-        description="Test description",
+        description="""The AI Phone Assistant is a smart, automated system designed to answer customer
+                calls for UBreakiFix stores during off-hours or when staff availability is limited.
+                The system uses the client’s existing phone scripts and repair price sheets to
+                provide accurate, friendly, and professional responses.
+                The assistant can handle inquiries about repair costs for cell phones, tablets, game
+                consoles, and computer software issues. For complex problems that require
+                technician intervention, the AI can perform a warm transfer to live staff.""",
         terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="contact@snippets.local"),
+        contact=openapi.Contact(email="ubreakfix@support.com"),
         license=openapi.License(name="BSD License"),
     ),
     public=True,
