@@ -1,6 +1,12 @@
 .venv
 .env
 
+# Python cache
+_pycache_/
+*.pyc
+
+
+
 accounts/__pycache__
 AI_PHONE_ASSISTANT/__pycache__
 api/__pycache__
