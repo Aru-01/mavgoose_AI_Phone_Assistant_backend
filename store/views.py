@@ -1,5 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.exceptions import PermissionDenied
 from store.models import Store
 from store.serialziers import StoreSerializer
 from store.permissions import IsSuperAdmin
@@ -31,7 +32,7 @@ class StoreViewSet(ModelViewSet):
 
         # # Store admin / staff → only own store
         # return Store.objects.filter(id=user.store_id)
-        return {"message:": "unauthorized"}
+        raise PermissionDenied("You are not authorized to view stores")
 
     def get_permissions(self):
         # Only Super Admin can create/update/delete

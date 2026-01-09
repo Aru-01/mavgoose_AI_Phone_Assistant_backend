@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "callLogs",
     "call_transfer",
     "ai_behavior",
+    "ai_api_key",
 ]
 
 MIDDLEWARE = [

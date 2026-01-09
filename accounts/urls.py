@@ -11,6 +11,7 @@ from accounts.views import (
     VerifyOtpView,
     ResetPasswordView,
     ResendOtpView,
+    RolePermissionView,UpdateRolePermissionView
 )
 
 router = DefaultRouter()
@@ -24,6 +25,8 @@ urlpatterns = [
     path("verify-otp/", VerifyOtpView.as_view(), name="verify-otp"),
     path("reset-password/", ResetPasswordView.as_view(), name="reset-password"),
     path("resend-otp/", ResendOtpView.as_view(), name="resend-otp"),
+    path("user-permissions/", RolePermissionView.as_view()),
+    path("user-permissions/update/", UpdateRolePermissionView.as_view()),
 ]
 
 urlpatterns += router.urls
