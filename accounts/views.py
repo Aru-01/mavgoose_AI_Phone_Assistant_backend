@@ -353,3 +353,5 @@ class ResendOtpView(APIView):
             {"message": "OTP sent to email"},
             status=status.HTTP_200_OK,
         )
+
+

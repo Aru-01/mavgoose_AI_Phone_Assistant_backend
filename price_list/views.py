@@ -2,6 +2,7 @@ from rest_framework import viewsets
 from django.db.models import F
 from price_list.models import Category, Brand, PriceList, RepairType, DeviceModel
 from price_list import serializers as sz
+from accounts.models import UserRole
 from drf_yasg.utils import swagger_auto_schema
 
 
@@ -284,9 +285,22 @@ class PriceListViewSet(viewsets.ModelViewSet):
     - Create / Update / Delete price list entries (write)
     """
 
-    queryset = PriceList.objects.select_related(
-        "category", "brand", "device_model", "device_model__brand", "repair_type"
-    )
+    # queryset = PriceList.objects.select_related(
+    #     "category", "brand", "device_model", "device_model__brand", "repair_type"
+    # )
+
+    def get_queryset(self):
+        user = self.request.user
+
+        if user.role != UserRole.SUPER_ADMIN:
+            return PriceList.objects.select_related(
+                "category", "brand", "device_model", "repair_type"
+            ).filter(store=user.store_id)
+
+        # store manager / staff
+        return PriceList.objects.select_related(
+            "category", "brand", "device_model", "repair_type"
+        )
 
     def get_serializer_class(self):
         if self.action in ["list", "retrieve"]:

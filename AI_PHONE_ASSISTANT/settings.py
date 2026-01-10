@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     "drf_yasg",
     "rest_framework_simplejwt",
     "django_filters",
-    "debug_toolbar",
+    # "debug_toolbar",
     "rest_framework",
     "api",
     "store",
@@ -39,10 +39,11 @@ INSTALLED_APPS = [
     "call_transfer",
     "ai_behavior",
     "ai_api_key",
+    "notifications",
 ]
 
 MIDDLEWARE = [
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    # "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",

@@ -12,6 +12,6 @@ router.register("categories", CategoryViewSet)
 router.register("brands", BrandViewSet)
 router.register("device-models", DeviceModelViewSet)
 router.register("repair-types", RepairTypeViewSet)
-router.register("price-list", PriceListViewSet)
+router.register("price-list", PriceListViewSet, basename="price-list")
 
 urlpatterns = router.urls
