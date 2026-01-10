@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "ai_behavior",
     "ai_api_key",
     "notifications",
+    "appointments",
 ]
 
 MIDDLEWARE = [
