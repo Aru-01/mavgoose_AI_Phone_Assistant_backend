@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import generics, status
+from rest_framework import generics, serializers
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from ai_behavior.models import AIConfig
@@ -8,8 +8,8 @@ from ai_behavior.serializers import (
     AutoTransferKeywordCRUDSerializer,
     AutoTransferKeyword,
 )
+from api.permissions import AIBehaviorPermission
 from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
 
 
 ###### --> Custom mixin ##########
@@ -33,7 +33,7 @@ def get_ai_config(self):
 
 class AutoTransferKeywordListCreateView(AIConfigMixin, generics.ListCreateAPIView):
     serializer_class = AutoTransferKeywordCRUDSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, AIBehaviorPermission]
 
     @swagger_auto_schema(
         operation_summary="List auto transfer keywords",
@@ -67,7 +67,7 @@ class AutoTransferKeywordDetailView(
     AIConfigMixin, generics.RetrieveUpdateDestroyAPIView
 ):
     serializer_class = AutoTransferKeywordCRUDSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, AIBehaviorPermission]
 
     @swagger_auto_schema(
         operation_summary="Retrieve auto transfer keyword",
@@ -112,7 +112,7 @@ class AutoTransferKeywordDetailView(
 
 class AIConfigCreateView(generics.CreateAPIView):
     serializer_class = AIConfigSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, AIBehaviorPermission]
 
     @swagger_auto_schema(
         operation_summary="Create AI configuration",
@@ -122,21 +122,20 @@ class AIConfigCreateView(generics.CreateAPIView):
     def post(self, request, *args, **kwargs):
         return super().post(request, *args, **kwargs)
 
-    def create(self, request, *args, **kwargs):
-        store_id = request.data.get("store")
+    def perform_create(self, serializer):
+        store_id = self.kwargs.get("store_id")  
+
         if AIConfig.objects.filter(store_id=store_id).exists():
-            return Response(
-                {
-                    "detail": "AI config already exists for this store. You can only update it."
-                },
-                status=status.HTTP_400_BAD_REQUEST,
+            raise serializers.ValidationError(
+                "AI config already exists for this store. You can only update it."
             )
-        return super().create(request, *args, **kwargs)
+
+        serializer.save(store_id=store_id)
 
 
 class AIConfigDetailView(generics.RetrieveUpdateAPIView):
     serializer_class = AIConfigSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, AIBehaviorPermission]
     lookup_field = "store_id"
 
     @swagger_auto_schema(
@@ -172,3 +171,4 @@ class AIConfigDetailView(generics.RetrieveUpdateAPIView):
             )
             .all()
         )
+

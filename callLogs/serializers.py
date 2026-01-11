@@ -3,7 +3,6 @@ from callLogs.models import (
     CallSession,
     CallTranscript,
 )
-from price_list.models import RepairType
 
 
 class CallTranscriptSerializer(serializers.ModelSerializer):

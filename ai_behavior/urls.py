@@ -7,7 +7,6 @@ from ai_behavior.views import (
 )
 
 urlpatterns = [
-    # AI behavior
     path(
         "stores/<int:store_id>/ai-behavior/",
         AIConfigDetailView.as_view(),
@@ -18,7 +17,6 @@ urlpatterns = [
         AIConfigCreateView.as_view(),
         name="ai-behavior-create",
     ),
-    # Keywords (under store → ai-behavior)
     path(
         "stores/<int:store_id>/ai-behavior/keywords/",
         AutoTransferKeywordListCreateView.as_view(),

@@ -263,6 +263,14 @@ class CallTransferViewSet(viewsets.ModelViewSet):
         return super().create(request, *args, **kwargs)
 
     @swagger_auto_schema(
+        operation_summary="Retrieve Call Transfer",
+        operation_description="Get details of a single call transfer.",
+        tags=["Call - Transfer"],
+    )
+    def retrieve(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
+
+    @swagger_auto_schema(
         operation_summary="Delete Call Transfer",
         operation_description="Delete a call transfer rule by ID.",
         tags=["Call - Transfer"],

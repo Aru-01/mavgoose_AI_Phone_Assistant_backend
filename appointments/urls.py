@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import (
+from appointments.views import (
     StoreScheduleListCreateView,
     StoreScheduleRetrieveUpdateView,
     available_slots,

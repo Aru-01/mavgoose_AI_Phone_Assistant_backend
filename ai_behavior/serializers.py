@@ -77,32 +77,21 @@ class AIConfigSerializer(serializers.ModelSerializer):
             "business_hours",
             "auto_transfer_keywords",
         ]
-        read_only_fields = ["id"]
+        read_only_fields = ["id", "store"]
 
     def create(self, validated_data):
         greetings_data = validated_data.pop("greetings", None)
         business_hours_data = validated_data.pop("business_hours", [])
         keywords_data = validated_data.pop("auto_transfer_keywords", [])
 
-        store = validated_data["store"]
-
-        # ❌ prevent duplicate create
-        if AIConfig.objects.filter(store=store).exists():
-            raise serializers.ValidationError(
-                "AI config already exists for this store. You can only update it."
-            )
-
         ai_config = AIConfig.objects.create(**validated_data)
 
-        # Greeting
         if greetings_data:
             GreetingConfig.objects.create(ai_config=ai_config, **greetings_data)
 
-        # Business hours
         for bh in business_hours_data:
             BusinessHour.objects.create(ai_config=ai_config, **bh)
 
-        # Keywords
         for kw in keywords_data:
             AutoTransferKeyword.objects.create(ai_config=ai_config, **kw)
 

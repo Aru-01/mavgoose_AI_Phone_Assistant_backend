@@ -63,3 +63,27 @@ class IsAdminOrStoreManager(BasePermission):
         if user.role == "STORE_MANAGER" and hasattr(user, "store"):
             return obj.store == user.store
         return False
+
+
+from rest_framework.permissions import BasePermission
+from store.models import Store
+
+
+class AIBehaviorPermission(BasePermission):
+    """
+    Staff / Store Manager → only own store
+    Super Admin → all stores
+    """
+
+    def has_permission(self, request, view):
+        user = request.user
+
+        if user.role == "SUPER_ADMIN":
+            return True
+
+        store_id = view.kwargs.get("store_id")
+
+        if not store_id:
+            return False
+
+        return user.store_id == int(store_id)

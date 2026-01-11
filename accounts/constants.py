@@ -5,4 +5,6 @@ BUSINESS_APPS = [
     "call_transfer",
     "store",
     "ai_behavior",
+    "ai_api_key",
+    "appointments",
 ]

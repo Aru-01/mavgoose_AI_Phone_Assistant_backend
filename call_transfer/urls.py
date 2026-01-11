@@ -1,5 +1,9 @@
 from rest_framework.routers import DefaultRouter
-from .views import TransferConditionViewSet, TransferContactViewSet, CallTransferViewSet
+from call_transfer.views import (
+    TransferConditionViewSet,
+    TransferContactViewSet,
+    CallTransferViewSet,
+)
 
 router = DefaultRouter()
 router.register("conditions", TransferConditionViewSet)

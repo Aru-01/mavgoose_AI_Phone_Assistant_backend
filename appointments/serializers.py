@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import StoreSchedule, Appointment
+from appointments.models import StoreSchedule, Appointment
 
 
 class StoreScheduleSerializer(serializers.ModelSerializer):
