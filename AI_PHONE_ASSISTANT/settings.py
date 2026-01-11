@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     "django_filters",
     # "debug_toolbar",
     "rest_framework",
+    "notifications.apps.NotificationsConfig",
     "api",
     "store",
     "accounts",
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     "call_transfer",
     "ai_behavior",
     "ai_api_key",
-    "notifications",
+    # "notifications",
     "appointments",
 ]
 
@@ -137,11 +138,12 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-# REST_FRAMEWORK = {
-#     "DEFAULT_AUTHENTICATION_CLASSES": (
-#         # "rest_framework_simplejwt.authentication.JWTAuthentication",
-#     )
-# }
+REST_FRAMEWORK = {
+    # "DEFAULT_AUTHENTICATION_CLASSES": (
+    #     # "rest_framework_simplejwt.authentication.JWTAuthentication",
+    # )
+    "DEFAULT_FILTER_BACKENDS": ["django_filters.rest_framework.DjangoFilterBackend"]
+}
 EMAIL_BACKEND = config("EMAIL_BACKEND")
 EMAIL_HOST = config("EMAIL_HOST")
 EMAIL_PORT = config("EMAIL_PORT")

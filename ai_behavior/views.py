@@ -8,6 +8,8 @@ from .serializers import (
     AutoTransferKeywordCRUDSerializer,
     AutoTransferKeyword,
 )
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 
 
 ###### --> Custom mixin ##########
@@ -33,6 +35,22 @@ class AutoTransferKeywordListCreateView(AIConfigMixin, generics.ListCreateAPIVie
     serializer_class = AutoTransferKeywordCRUDSerializer
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        operation_summary="List auto transfer keywords",
+        operation_description="List auto transfer keywords for a store AI config",
+        tags=["AI Behavior"],
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Create auto transfer keyword",
+        operation_description="Create a new auto transfer keyword for a store AI config",
+        tags=["AI Behavior"],
+    )
+    def post(self, request, *args, **kwargs):
+        return super().post(request, *args, **kwargs)
+
     def get_queryset(self):
         return AutoTransferKeyword.objects.filter(ai_config=self.get_ai_config())
 
@@ -51,6 +69,38 @@ class AutoTransferKeywordDetailView(
     serializer_class = AutoTransferKeywordCRUDSerializer
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        operation_summary="Retrieve auto transfer keyword",
+        operation_description="Retrieve a single auto transfer keyword",
+        tags=["AI Behavior"],
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Update auto transfer keyword",
+        operation_description="Update an auto transfer keyword",
+        tags=["AI Behavior"],
+    )
+    def put(self, request, *args, **kwargs):
+        return super().put(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Partial update auto transfer keyword",
+        operation_description="Partially update an auto transfer keyword",
+        tags=["AI Behavior"],
+    )
+    def patch(self, request, *args, **kwargs):
+        return super().patch(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Delete auto transfer keyword",
+        operation_description="Delete an auto transfer keyword",
+        tags=["AI Behavior"],
+    )
+    def delete(self, request, *args, **kwargs):
+        return super().delete(request, *args, **kwargs)
+
     def get_serializer_context(self):
         context = super().get_serializer_context()
         context["ai_config"] = self.get_ai_config()
@@ -63,6 +113,14 @@ class AutoTransferKeywordDetailView(
 class AIConfigCreateView(generics.CreateAPIView):
     serializer_class = AIConfigSerializer
     permission_classes = [IsAuthenticated]
+
+    @swagger_auto_schema(
+        operation_summary="Create AI configuration",
+        operation_description="Create AI configuration for a store (one per store)",
+        tags=["AI Behavior"],
+    )
+    def post(self, request, *args, **kwargs):
+        return super().post(request, *args, **kwargs)
 
     def create(self, request, *args, **kwargs):
         store_id = request.data.get("store")
@@ -80,6 +138,30 @@ class AIConfigDetailView(generics.RetrieveUpdateAPIView):
     serializer_class = AIConfigSerializer
     permission_classes = [IsAuthenticated]
     lookup_field = "store_id"
+
+    @swagger_auto_schema(
+        operation_summary="Retrieve AI configuration",
+        operation_description="Retrieve AI configuration by store ID",
+        tags=["AI Behavior"],
+    )
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Update AI configuration",
+        operation_description="Update AI configuration including greetings, business hours and keywords",
+        tags=["AI Behavior"],
+    )
+    def put(self, request, *args, **kwargs):
+        return super().put(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        operation_summary="Partial update AI configuration",
+        operation_description="Partially update AI configuration",
+        tags=["AI Behavior"],
+    )
+    def patch(self, request, *args, **kwargs):
+        return super().patch(request, *args, **kwargs)
 
     def get_queryset(self):
         return (

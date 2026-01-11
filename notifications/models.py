@@ -7,8 +7,7 @@ class NotificationCategory(models.TextChoices):
     CALLS = "CALLS", "Calls"
     SYSTEM = "SYSTEM", "System"
     USER = "USER", "User"
-    APPOINTMENT = "APPOINTMENT ", "Appointment"
-
+    APPOINTMENT = "APPOINTMENT", "Appointment"
 
 class Notification(models.Model):
     recipient = models.ForeignKey(

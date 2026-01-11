@@ -47,17 +47,17 @@ class RepairTypeSerializer(serializers.ModelSerializer):
 
 
 class PriceListReadSerializer(serializers.ModelSerializer):
-    category_name = serializers.ReadOnlyField(source="category.name")
-    brand_name = serializers.ReadOnlyField(source="brand.name")
-    device_model_name = serializers.ReadOnlyField(source="device_model.name")
-    repair_type_name = serializers.ReadOnlyField(source="repair_type.name")
+    brand_name = serializers.CharField(read_only=True)
+    device_model_name = serializers.CharField(read_only=True)
+    category_name = serializers.CharField(read_only=True)
+    repair_type_name = serializers.CharField(read_only=True)
 
     class Meta:
         model = PriceList
         fields = [
             "id",
-            "category_name",
             "store",
+            "category_name",
             "brand_name",
             "device_model_name",
             "repair_type_name",
@@ -68,12 +68,8 @@ class PriceListReadSerializer(serializers.ModelSerializer):
 
 
 class PriceListWriteSerializer(serializers.ModelSerializer):
-    category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all())
-    brand = serializers.PrimaryKeyRelatedField(
-        queryset=Brand.objects.select_related("category").all()
-    )
     device_model = serializers.PrimaryKeyRelatedField(
-        queryset=DeviceModel.objects.select_related("brand", "brand__category").all()
+        queryset=DeviceModel.objects.select_related("brand", "brand__category")
     )
     repair_type = serializers.PrimaryKeyRelatedField(queryset=RepairType.objects.all())
 
@@ -81,9 +77,6 @@ class PriceListWriteSerializer(serializers.ModelSerializer):
         model = PriceList
         fields = [
             "id",
-            "category",
-            "store",
-            "brand",
             "device_model",
             "repair_type",
             "price",

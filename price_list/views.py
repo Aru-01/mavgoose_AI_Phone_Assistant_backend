@@ -1,7 +1,9 @@
-from rest_framework import viewsets
+from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import F
+from rest_framework import viewsets, serializers
+from api.permissions import PriceListPermission
 from price_list.models import Category, Brand, PriceList, RepairType, DeviceModel
-from price_list import serializers as sz
+from price_list import serializers as sz, priceListFilter
 from accounts.models import UserRole
 from drf_yasg.utils import swagger_auto_schema
 
@@ -288,19 +290,69 @@ class PriceListViewSet(viewsets.ModelViewSet):
     # queryset = PriceList.objects.select_related(
     #     "category", "brand", "device_model", "device_model__brand", "repair_type"
     # )
+    permission_classes = [PriceListPermission]
+    filter_backends = [DjangoFilterBackend]
+    # filterset_class = priceListFilter.PriceListFilter
+
+    @property
+    def filterset_class(self):
+        user = self.request.user
+
+        if user.role == UserRole.SUPER_ADMIN:
+            return priceListFilter.PriceListAdminFilter
+
+        return priceListFilter.PriceListFilter
 
     def get_queryset(self):
         user = self.request.user
+        # print("QUERY:", self.request.query_params)
 
-        if user.role != UserRole.SUPER_ADMIN:
-            return PriceList.objects.select_related(
-                "category", "brand", "device_model", "repair_type"
-            ).filter(store=user.store_id)
-
-        # store manager / staff
-        return PriceList.objects.select_related(
-            "category", "brand", "device_model", "repair_type"
+        qs = PriceList.objects.select_related(
+            "store",
+            "device_model",
+            "device_model__brand",
+            "device_model__brand__category",
+            "repair_type",
+        ).annotate(
+            brand_name=F("device_model__brand__name"),
+            device_model_name=F("device_model__name"),
+            category_name=F("device_model__brand__category__name"),
+            repair_type_name=F("repair_type__name"),
         )
+
+        if user.role in [UserRole.STAFF, UserRole.STORE_MANAGER]:
+            qs = qs.filter(store=user.store)
+
+        return qs
+
+    def perform_create(self, serializer):
+        user = self.request.user
+
+        if user.role == UserRole.STORE_MANAGER:
+            store = user.store
+            device = serializer.validated_data["device_model"]
+            serializer.save(
+                category=device.brand.category,
+                brand=device.brand,
+                store=store,
+            )
+
+        elif user.role == UserRole.SUPER_ADMIN:
+            store_id = self.request.query_params.get("store")
+
+            if not store_id:
+                raise serializers.ValidationError(
+                    {"store": "store query param is required for super admin"}
+                )
+
+            # serializer.save(store_id=store_id)
+            device = serializer.validated_data["device_model"]
+
+            serializer.save(
+                category=device.brand.category,
+                brand=device.brand,
+                store_id=store_id,
+            )
 
     def get_serializer_class(self):
         if self.action in ["list", "retrieve"]:

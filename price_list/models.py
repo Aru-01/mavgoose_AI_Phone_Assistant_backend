@@ -79,4 +79,4 @@ class PriceList(models.Model):
         )
 
     def __str__(self):
-        return f"{self.device_model} - {self.repair_type} (${self.price})"
+        return f"PriceList #{self.id} - {self.price}"

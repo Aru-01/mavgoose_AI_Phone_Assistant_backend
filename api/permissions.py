@@ -1,4 +1,38 @@
-from rest_framework.permissions import BasePermission
+from rest_framework.permissions import BasePermission, SAFE_METHODS
+from accounts.models import UserRole
+
+
+class PriceListPermission(BasePermission):
+    def has_permission(self, request, view):
+        user = request.user
+
+        if not user.is_authenticated:
+            return False
+
+        # STAFF → read only
+        if user.role == UserRole.STAFF:
+            return request.method in SAFE_METHODS
+
+        # STORE_MANAGER → full access
+        if user.role == UserRole.STORE_MANAGER:
+            return True
+
+        # SUPER_ADMIN → full access
+        if user.role == UserRole.SUPER_ADMIN:
+            return True
+
+        return False
+
+    def has_object_permission(self, request, view, obj):
+        user = request.user
+
+        if user.role == UserRole.SUPER_ADMIN:
+            return True
+
+        if user.role in [UserRole.STAFF, UserRole.STORE_MANAGER]:
+            return obj.store == user.store
+
+        return False
 
 
 class IsAdminUserRole(BasePermission):
