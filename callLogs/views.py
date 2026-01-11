@@ -2,8 +2,9 @@ from rest_framework import mixins, viewsets, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from datetime import timedelta
 from django.utils import timezone
-from .models import CallSession
-from .serializers import CallSessionSerializer
+from callLogs.models import CallSession
+from accounts.models import UserRole
+from callLogs.serializers import CallSessionSerializer
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 
@@ -34,7 +35,12 @@ class CallSessionViewSet(
 
     @swagger_auto_schema(
         operation_summary="List call sessions",
-        operation_description="Retrieve a list of call sessions with optional filters",
+        operation_description=(
+            "Retrieve a list of call sessions with optional filters.\n\n"
+            "**Role-based filtering:**\n"
+            "- Staff / Store Manager: Only see calls from their store.\n"
+            "- Super Admin: Can see all calls, optionally filter by store using `store` query param."
+        ),
         tags=["Call Logs"],
         manual_parameters=[
             openapi.Parameter(
@@ -65,6 +71,13 @@ class CallSessionViewSet(
                 type=openapi.TYPE_STRING,
                 required=False,
             ),
+            openapi.Parameter(
+                "store",
+                openapi.IN_QUERY,
+                description="Filter by store ID (only for Super Admin)",
+                type=openapi.TYPE_INTEGER,
+                required=False,
+            ),
         ],
     )
     def list(self, request, *args, **kwargs):
@@ -88,6 +101,14 @@ class CallSessionViewSet(
 
     def get_queryset(self):
         qs = super().get_queryset()
+        user = self.request.user
+
+        if user.role in [UserRole.STAFF, UserRole.STORE_MANAGER]:
+            qs = qs.filter(store=user.store)
+        elif user.role == UserRole.SUPER_ADMIN:
+            store_id = self.request.query_params.get("store")
+            if store_id:
+                qs = qs.filter(store_id=store_id)
 
         date_filter = self.request.query_params.get("date")
         now = timezone.now()
@@ -101,4 +122,3 @@ class CallSessionViewSet(
             qs = qs.filter(created_at__year=now.year, created_at__month=now.month)
 
         return qs
-
