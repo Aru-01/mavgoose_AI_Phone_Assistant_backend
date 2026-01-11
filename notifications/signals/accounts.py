@@ -1,11 +1,3 @@
-from django.db.models.signals import post_save
-from django.dispatch import receiver
-from accounts.models import User
-from notifications.models import Notification, NotificationCategory
-from notifications.utils import get_recipients
-
-
-# notifications/signals/accounts.py
 from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
 from accounts.models import User
