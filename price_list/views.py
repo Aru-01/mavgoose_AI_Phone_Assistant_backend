@@ -384,14 +384,14 @@ class PriceListViewSet(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs):
         return super().create(request, *args, **kwargs)
 
-    # @swagger_auto_schema(
-    #     operation_summary="Update price list entry",
-    #     request_body=sz.PriceListWriteSerializer,
-    #     responses={200: sz.PriceListWriteSerializer()},
-    #     tags=["Price List"],
-    # )
-    # def update(self, request, *args, **kwargs):
-    #     return super().update(request, *args, **kwargs)
+    @swagger_auto_schema(
+        operation_summary="Update price list entry",
+        request_body=sz.PriceListWriteSerializer,
+        responses={200: sz.PriceListWriteSerializer()},
+        tags=["Price List"],
+    )
+    def update(self, request, *args, **kwargs):
+        return super().update(request, *args, **kwargs)
 
     @swagger_auto_schema(
         operation_summary="Partial update price list entry",

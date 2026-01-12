@@ -1,7 +1,7 @@
 from django.urls import path
 from ai_behavior.views import (
-    AIConfigCreateView,
-    AIConfigDetailView,
+    AIBehaviorConfigCreateView,
+    AIBehaviorConfigDetailView,
     AutoTransferKeywordDetailView,
     AutoTransferKeywordListCreateView,
 )
@@ -9,12 +9,12 @@ from ai_behavior.views import (
 urlpatterns = [
     path(
         "stores/<int:store_id>/ai-behavior/",
-        AIConfigDetailView.as_view(),
+        AIBehaviorConfigDetailView.as_view(),
         name="ai-behavior-detail",
     ),
     path(
         "stores/<int:store_id>/ai-behavior/create/",
-        AIConfigCreateView.as_view(),
+        AIBehaviorConfigCreateView.as_view(),
         name="ai-behavior-create",
     ),
     path(

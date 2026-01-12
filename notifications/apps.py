@@ -1,4 +1,3 @@
-# notifications/apps.py
 from django.apps import AppConfig
 
 
@@ -10,3 +9,4 @@ class NotificationsConfig(AppConfig):
         import notifications.signals.accounts
         import notifications.signals.calls
         import notifications.signals.call_transfer
+        import notifications.signals.appointments

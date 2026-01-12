@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from ai_behavior.models import (
     GreetingConfig,
-    AIConfig,
+    AIBehaviorConfig,
     AutoTransferKeyword,
     BusinessHour,
 )
@@ -36,9 +36,11 @@ class AutoTransferKeywordCRUDSerializer(serializers.ModelSerializer):
     def validate_keyword(self, value):
         value = value.lower().strip()
 
-        ai_config = self.context["ai_config"]
+        ai_behavior_config = self.context["ai_behavior_config"]
 
-        qs = AutoTransferKeyword.objects.filter(ai_config=ai_config, keyword=value)
+        qs = AutoTransferKeyword.objects.filter(
+            ai_behavior_config=ai_behavior_config, keyword=value
+        )
 
         if self.instance:
             qs = qs.exclude(pk=self.instance.pk)
@@ -60,13 +62,13 @@ class AutoTransferKeywordSerializer(serializers.ModelSerializer):
         return value.lower().strip()
 
 
-class AIConfigSerializer(serializers.ModelSerializer):
+class AIBehaviorConfigSerializer(serializers.ModelSerializer):
     greetings = GreetingConfigSerializer(required=False)
     business_hours = BusinessHourSerializer(many=True, required=False)
     auto_transfer_keywords = AutoTransferKeywordSerializer(many=True, required=False)
 
     class Meta:
-        model = AIConfig
+        model = AIBehaviorConfig
         fields = [
             "id",
             "store",
@@ -84,18 +86,22 @@ class AIConfigSerializer(serializers.ModelSerializer):
         business_hours_data = validated_data.pop("business_hours", [])
         keywords_data = validated_data.pop("auto_transfer_keywords", [])
 
-        ai_config = AIConfig.objects.create(**validated_data)
+        ai_behavior_config = AIBehaviorConfig.objects.create(**validated_data)
 
         if greetings_data:
-            GreetingConfig.objects.create(ai_config=ai_config, **greetings_data)
+            GreetingConfig.objects.create(
+                ai_behavior_config=ai_behavior_config, **greetings_data
+            )
 
         for bh in business_hours_data:
-            BusinessHour.objects.create(ai_config=ai_config, **bh)
+            BusinessHour.objects.create(ai_behavior_config=ai_behavior_config, **bh)
 
         for kw in keywords_data:
-            AutoTransferKeyword.objects.create(ai_config=ai_config, **kw)
+            AutoTransferKeyword.objects.create(
+                ai_behavior_config=ai_behavior_config, **kw
+            )
 
-        return ai_config
+        return ai_behavior_config
 
     def update(self, instance, validated_data):
         greetings_data = validated_data.pop("greetings", None)
@@ -110,7 +116,7 @@ class AIConfigSerializer(serializers.ModelSerializer):
         # Greeting update
         if greetings_data:
             GreetingConfig.objects.update_or_create(
-                ai_config=instance,
+                ai_behavior_config=instance,
                 defaults=greetings_data,
             )
 
@@ -118,12 +124,12 @@ class AIConfigSerializer(serializers.ModelSerializer):
         if business_hours_data is not None:
             instance.business_hours.all().delete()
             for bh in business_hours_data:
-                BusinessHour.objects.create(ai_config=instance, **bh)
+                BusinessHour.objects.create(ai_behavior_config=instance, **bh)
 
         # Keywords (replace all)
         if keywords_data is not None:
             instance.auto_transfer_keywords.all().delete()
             for kw in keywords_data:
-                AutoTransferKeyword.objects.create(ai_config=instance, **kw)
+                AutoTransferKeyword.objects.create(ai_behavior_config=instance, **kw)
 
         return instance

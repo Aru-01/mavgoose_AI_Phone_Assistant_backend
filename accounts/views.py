@@ -1,8 +1,9 @@
 from django.contrib.auth.models import Group, Permission
 from rest_framework.viewsets import GenericViewSet
+from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.views import APIView
-from rest_framework import mixins,status
+from rest_framework import mixins, status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from api.permissions import IsAdminUserRole
@@ -149,6 +150,7 @@ class UserViewSet(
 
 class SelfProfileView(APIView):
     permission_classes = [IsAuthenticated]
+    parser_classes = [MultiPartParser, FormParser]
 
     @swagger_auto_schema(
         operation_summary="Get logged-in user profile",
@@ -161,7 +163,33 @@ class SelfProfileView(APIView):
 
     @swagger_auto_schema(
         operation_summary="Update logged-in user profile",
-        request_body=sz.SelfProfileSerializer,
+        manual_parameters=[
+            openapi.Parameter(
+                name="profile_image",
+                in_=openapi.IN_FORM,
+                type=openapi.TYPE_FILE,
+                required=False,
+                description="User profile image",
+            ),
+            openapi.Parameter(
+                name="first_name",
+                in_=openapi.IN_FORM,
+                type=openapi.TYPE_STRING,
+                required=False,
+            ),
+            openapi.Parameter(
+                name="last_name",
+                in_=openapi.IN_FORM,
+                type=openapi.TYPE_STRING,
+                required=False,
+            ),
+            openapi.Parameter(
+                name="state_location",
+                in_=openapi.IN_FORM,
+                type=openapi.TYPE_STRING,
+                required=False,
+            ),
+        ],
         responses={200: sz.SelfProfileSerializer()},
         tags=["Auth / Account"],
     )
@@ -352,5 +380,3 @@ class ResendOtpView(APIView):
             {"message": "OTP sent to email"},
             status=status.HTTP_200_OK,
         )
-
-

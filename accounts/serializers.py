@@ -19,11 +19,15 @@ class UserSerializer(serializers.ModelSerializer):
             "last_name",
             "role",
             "store",
+            "profile_image",
             "last_active",
             "password",
         ]
         read_only_fields = ["id", "last_active"]
-        extra_kwargs = {"password": {"write_only": True}}
+        extra_kwargs = {
+            "password": {"write_only": True},
+            "profile_image": {"required": False},
+        }
 
     def get_last_active(self, obj):
         if not obj.last_login:
@@ -50,6 +54,7 @@ class SelfProfileSerializer(serializers.ModelSerializer):
             "email",
             "first_name",
             "last_name",
+            "profile_image",
             "state_location",
             "role",
         ]
@@ -61,7 +66,14 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ["email", "first_name", "last_name", "state_location", "password"]
+        fields = [
+            "email",
+            "first_name",
+            "last_name",
+            "profile_image",
+            "state_location",
+            "password",
+        ]
 
     def create(self, validated_data):
         password = validated_data.pop("password")

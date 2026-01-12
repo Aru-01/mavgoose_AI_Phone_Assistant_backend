@@ -2,9 +2,9 @@ from django.db import models
 from store.models import Store
 
 
-class AIConfig(models.Model):
+class AIBehaviorConfig(models.Model):
     store = models.OneToOneField(
-        Store, on_delete=models.CASCADE, related_name="ai_config"
+        Store, on_delete=models.CASCADE, related_name="ai_behavior_config"
     )
 
     # Tone & Personality
@@ -30,8 +30,8 @@ class AIConfig(models.Model):
 
 
 class GreetingConfig(models.Model):
-    ai_config = models.OneToOneField(
-        AIConfig, on_delete=models.CASCADE, related_name="greetings"
+    ai_behavior_config = models.OneToOneField(
+        AIBehaviorConfig, on_delete=models.CASCADE, related_name="greetings"
     )
 
     opening_hours_greeting = models.TextField()
@@ -39,8 +39,8 @@ class GreetingConfig(models.Model):
 
 
 class BusinessHour(models.Model):
-    ai_config = models.ForeignKey(
-        AIConfig, on_delete=models.CASCADE, related_name="business_hours"
+    ai_behavior_config = models.ForeignKey(
+        AIBehaviorConfig, on_delete=models.CASCADE, related_name="business_hours"
     )
 
     day = models.PositiveSmallIntegerField(
@@ -60,18 +60,20 @@ class BusinessHour(models.Model):
     close_time = models.TimeField(null=True, blank=True)
 
     class Meta:
-        unique_together = ("ai_config", "day")
+        unique_together = ("ai_behavior_config", "day")
 
     def __str__(self):
         return f"{self.get_day_display()} - {'Open' if self.is_open else 'Closed'}"
 
 
 class AutoTransferKeyword(models.Model):
-    ai_config = models.ForeignKey(
-        AIConfig, on_delete=models.CASCADE, related_name="auto_transfer_keywords"
+    ai_behavior_config = models.ForeignKey(
+        AIBehaviorConfig,
+        on_delete=models.CASCADE,
+        related_name="auto_transfer_keywords",
     )
 
     keyword = models.CharField(max_length=150)
 
     class Meta:
-        unique_together = ("ai_config", "keyword")
+        unique_together = ("ai_behavior_config", "keyword")
