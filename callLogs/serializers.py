@@ -1,3 +1,5 @@
+from django.utils import timezone
+from django.db import transaction
 from rest_framework import serializers
 from callLogs.models import (
     CallSession,
@@ -38,9 +40,24 @@ class CallSessionSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         transcripts_data = validated_data.pop("transcripts", [])
 
-        call = CallSession.objects.create(**validated_data)
+        try:
+            with transaction.atomic():
+                call = CallSession.objects.create(**validated_data)
 
-        transcripts = [CallTranscript(call=call, **t) for t in transcripts_data]
-        CallTranscript.objects.bulk_create(transcripts)
+                transcripts = [
+                    CallTranscript(
+                        call=call,
+                        timestamp=timezone.now(),
+                        **t
+                    )
+                    for t in transcripts_data
+                ]
 
-        return call
+                if transcripts:
+                    CallTranscript.objects.bulk_create(transcripts)
+
+            return call
+
+        except Exception as e:
+            print("🔥 CREATE ERROR:", e)
+            raise

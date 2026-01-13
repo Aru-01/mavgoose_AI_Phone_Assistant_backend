@@ -19,10 +19,8 @@ def call_log_notification(sender, instance, created, **kwargs):
 
     elif instance.call_type == "WARM_TRANSFER":
         title = "Warm Transfer Completed"
-        message = (
-            f"Call successfully transferred to "
-            f"{instance.transferred_to} - {instance.issue_summary}"
-        )
+        message = "Call successfully transferred to a technician."
+
     else:
         return
 
