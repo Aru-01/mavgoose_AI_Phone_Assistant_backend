@@ -296,6 +296,9 @@ class PriceListViewSet(viewsets.ModelViewSet):
 
     @property
     def filterset_class(self):
+        if getattr(self, "swagger_fake_view", False):
+            return priceListFilter.PriceListFilter
+
         user = self.request.user
 
         if user.role == UserRole.SUPER_ADMIN:
@@ -304,6 +307,8 @@ class PriceListViewSet(viewsets.ModelViewSet):
         return priceListFilter.PriceListFilter
 
     def get_queryset(self):
+        if getattr(self, "swagger_fake_view", False):
+            return PriceList.objects.none()
         user = self.request.user
         # print("QUERY:", self.request.query_params)
 

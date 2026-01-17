@@ -84,6 +84,9 @@ class TransferContactViewSet(viewsets.ModelViewSet):
     http_method_names = ["get", "post", "patch", "put"]
 
     def get_queryset(self):
+        if getattr(self, "swagger_fake_view", False):
+            return super().get_queryset().none()
+        
         user = self.request.user
         qs = super().get_queryset()
 
@@ -279,6 +282,10 @@ class CallTransferViewSet(viewsets.ModelViewSet):
         return super().destroy(request, *args, **kwargs)
 
     def get_queryset(self):
+
+        if getattr(self, "swagger_fake_view", False):
+            return super().get_queryset().none()
+
         user = self.request.user
         qs = super().get_queryset()
 

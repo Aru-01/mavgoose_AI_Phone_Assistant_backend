@@ -11,7 +11,9 @@ from accounts.views import (
     VerifyOtpView,
     ResetPasswordView,
     ResendOtpView,
-    RolePermissionView,UpdateRolePermissionView
+    RolePermissionView,
+    UpdateRolePermissionView,
+    CustomTokenRefreshView,
 )
 
 router = DefaultRouter()
@@ -27,6 +29,7 @@ urlpatterns = [
     path("resend-otp/", ResendOtpView.as_view(), name="resend-otp"),
     path("user-permissions/", RolePermissionView.as_view()),
     path("user-permissions/update/", UpdateRolePermissionView.as_view()),
+    path("token/refresh/", CustomTokenRefreshView.as_view()),
 ]
 
 urlpatterns += router.urls

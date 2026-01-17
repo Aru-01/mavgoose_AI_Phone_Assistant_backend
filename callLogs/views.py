@@ -100,6 +100,9 @@ class CallSessionViewSet(
         return super().retrieve(request, *args, **kwargs)
 
     def get_queryset(self):
+        if getattr(self, "swagger_fake_view", False):
+            return CallSession.objects.none()
+
         qs = super().get_queryset()
         user = self.request.user
 

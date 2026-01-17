@@ -24,6 +24,10 @@ class StoreViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_queryset(self):
+        if getattr(self, "swagger_fake_view", False):
+            return Store.objects.none()
+        
+        
         user = self.request.user
 
         # Super Admin → all stores

@@ -2,6 +2,7 @@ from django.contrib.auth.models import Group, Permission
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import TokenRefreshView
 from rest_framework.views import APIView
 from rest_framework import mixins, status
 from rest_framework.response import Response
@@ -380,3 +381,25 @@ class ResendOtpView(APIView):
             {"message": "OTP sent to email"},
             status=status.HTTP_200_OK,
         )
+
+
+class CustomTokenRefreshView(TokenRefreshView):
+    @swagger_auto_schema(
+        operation_summary="Refresh Access Token",
+        request_body=openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                "refresh": openapi.Schema(type=openapi.TYPE_STRING),
+            },
+            required=["refresh"],
+        ),
+        responses={
+            200: openapi.Response(
+                description="New access token",
+                examples={"application/json": {"access": "string"}},
+            )
+        },
+        tags=["Auth / Account"],
+    )
+    def post(self, request, *args, **kwargs):
+        return super().post(request, *args, **kwargs)
