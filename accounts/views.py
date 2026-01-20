@@ -263,6 +263,7 @@ class LoginView(APIView):
     def post(self, request):
         serializer = sz.LoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data["user"]
 
         return Response(
             {
@@ -270,6 +271,18 @@ class LoginView(APIView):
                 "tokens": {
                     "refresh": serializer.validated_data["refresh"],
                     "access": serializer.validated_data["access"],
+                },
+                "user": {
+                    "id": user.id,
+                    "email": user.email,
+                    "role": user.role,
+                    "store": user.store.id if user.store else None,
+                    "name": f"{user.first_name} {user.last_name}",
+                    "profile_image": (
+                        request.build_absolute_uri(user.profile_image.url)
+                        if user.profile_image
+                        else None
+                    ),
                 },
             },
             status=status.HTTP_200_OK,
