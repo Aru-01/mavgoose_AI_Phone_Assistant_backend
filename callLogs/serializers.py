@@ -45,11 +45,7 @@ class CallSessionSerializer(serializers.ModelSerializer):
                 call = CallSession.objects.create(**validated_data)
 
                 transcripts = [
-                    CallTranscript(
-                        call=call,
-                        timestamp=timezone.now(),
-                        **t
-                    )
+                    CallTranscript(call=call, timestamp=timezone.now(), **t)
                     for t in transcripts_data
                 ]
 
@@ -61,3 +57,14 @@ class CallSessionSerializer(serializers.ModelSerializer):
         except Exception as e:
             print("🔥 CREATE ERROR:", e)
             raise
+
+
+class StoreCallSummarySerializer(serializers.Serializer):
+    store_id = serializers.IntegerField()
+    store_name = serializers.CharField()
+    total_calls_today = serializers.IntegerField()
+    ai_handled = serializers.IntegerField()
+    warm_transfer = serializers.IntegerField()
+    appointments_booked = serializers.IntegerField()
+    missed_calls = serializers.IntegerField()
+    avg_call_duration = serializers.FloatField()
