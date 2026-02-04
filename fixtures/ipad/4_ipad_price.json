@@ -1,0 +1,1772 @@
+[
+  {
+    "model": "price_list.pricelist",
+    "pk": 4459,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 150,
+      "repair_type": 15,
+      "price": "89.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4465,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 150,
+      "repair_type": 2,
+      "price": "119.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4471,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 150,
+      "repair_type": 1,
+      "price": "99.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4477,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 150,
+      "repair_type": 11,
+      "price": "89.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4483,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 151,
+      "repair_type": 15,
+      "price": "89.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4489,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 151,
+      "repair_type": 2,
+      "price": "119.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4495,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 151,
+      "repair_type": 1,
+      "price": "99.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4501,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 151,
+      "repair_type": 11,
+      "price": "89.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4507,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 152,
+      "repair_type": 15,
+      "price": "89.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4513,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 152,
+      "repair_type": 2,
+      "price": "119.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4519,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 152,
+      "repair_type": 1,
+      "price": "99.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4525,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 152,
+      "repair_type": 11,
+      "price": "89.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4531,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 153,
+      "repair_type": 15,
+      "price": "99.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4537,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 153,
+      "repair_type": 2,
+      "price": "149.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4543,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 153,
+      "repair_type": 1,
+      "price": "129.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4549,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 153,
+      "repair_type": 11,
+      "price": "164.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4555,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 154,
+      "repair_type": 15,
+      "price": "119.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4561,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 154,
+      "repair_type": 2,
+      "price": "149.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4567,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 154,
+      "repair_type": 1,
+      "price": "129.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4573,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 154,
+      "repair_type": 11,
+      "price": "164.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4579,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 155,
+      "repair_type": 15,
+      "price": "144.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4585,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 155,
+      "repair_type": 2,
+      "price": "159.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4591,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 155,
+      "repair_type": 1,
+      "price": "147.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4597,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 155,
+      "repair_type": 11,
+      "price": "164.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4603,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 156,
+      "repair_type": 15,
+      "price": "144.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4609,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 156,
+      "repair_type": 2,
+      "price": "179.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4615,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 156,
+      "repair_type": 1,
+      "price": "147.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4621,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 156,
+      "repair_type": 11,
+      "price": "184.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4627,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 157,
+      "repair_type": 15,
+      "price": "144.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4633,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 157,
+      "repair_type": 2,
+      "price": "189.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4639,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 157,
+      "repair_type": 1,
+      "price": "147.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4645,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 157,
+      "repair_type": 11,
+      "price": "184.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4651,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 158,
+      "repair_type": 15,
+      "price": "144.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4657,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 158,
+      "repair_type": 2,
+      "price": "209.0",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4663,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 158,
+      "repair_type": 1,
+      "price": "147.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4669,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 158,
+      "repair_type": 11,
+      "price": "184.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4675,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 159,
+      "repair_type": 15,
+      "price": "89.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4681,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 159,
+      "repair_type": 2,
+      "price": "119.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4687,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 159,
+      "repair_type": 1,
+      "price": "99.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4693,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 159,
+      "repair_type": 11,
+      "price": "164.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4699,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 160,
+      "repair_type": 15,
+      "price": "89.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4705,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 160,
+      "repair_type": 2,
+      "price": "119.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4711,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 160,
+      "repair_type": 1,
+      "price": "99.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4717,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 160,
+      "repair_type": 11,
+      "price": "164.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4723,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 161,
+      "repair_type": 15,
+      "price": "169.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4729,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 161,
+      "repair_type": 2,
+      "price": "169.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4735,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 161,
+      "repair_type": 1,
+      "price": "149.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4741,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 161,
+      "repair_type": 11,
+      "price": "164.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4747,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 162,
+      "repair_type": 15,
+      "price": "194.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4753,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 162,
+      "repair_type": 2,
+      "price": "194.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4759,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 162,
+      "repair_type": 1,
+      "price": "149.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4765,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 162,
+      "repair_type": 11,
+      "price": "184.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4771,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 163,
+      "repair_type": 15,
+      "price": "425.0",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4777,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 163,
+      "repair_type": 2,
+      "price": "425.0",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4783,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 163,
+      "repair_type": 1,
+      "price": "249.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4789,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 163,
+      "repair_type": 11,
+      "price": "249.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4795,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 164,
+      "repair_type": 15,
+      "price": "99.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4801,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 164,
+      "repair_type": 2,
+      "price": "149.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4807,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 164,
+      "repair_type": 1,
+      "price": "129.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4813,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 164,
+      "repair_type": 11,
+      "price": "164.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4819,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 165,
+      "repair_type": 15,
+      "price": "199.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4825,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 165,
+      "repair_type": 2,
+      "price": "199.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4831,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 165,
+      "repair_type": 1,
+      "price": "129.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4837,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 165,
+      "repair_type": 11,
+      "price": "164.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4843,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 166,
+      "repair_type": 15,
+      "price": "239.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4849,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 166,
+      "repair_type": 2,
+      "price": "239.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4855,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 166,
+      "repair_type": 1,
+      "price": "184.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4861,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 166,
+      "repair_type": 11,
+      "price": "199.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4867,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 167,
+      "repair_type": 15,
+      "price": "269.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4873,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 167,
+      "repair_type": 2,
+      "price": "269.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4879,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 167,
+      "repair_type": 1,
+      "price": "189.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4885,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 167,
+      "repair_type": 11,
+      "price": "209.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4891,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 168,
+      "repair_type": 15,
+      "price": "289.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4897,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 168,
+      "repair_type": 2,
+      "price": "289.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4903,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 168,
+      "repair_type": 1,
+      "price": "189.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4909,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 168,
+      "repair_type": 11,
+      "price": "249.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4915,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 169,
+      "repair_type": 15,
+      "price": "197.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4921,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 169,
+      "repair_type": 2,
+      "price": "197.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4927,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 169,
+      "repair_type": 1,
+      "price": "157.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4933,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 169,
+      "repair_type": 11,
+      "price": "179.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4939,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 170,
+      "repair_type": 15,
+      "price": "229.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4945,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 170,
+      "repair_type": 2,
+      "price": "229.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4951,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 170,
+      "repair_type": 1,
+      "price": "167.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4957,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 170,
+      "repair_type": 11,
+      "price": "179.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4963,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 171,
+      "repair_type": 15,
+      "price": "299.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4969,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 171,
+      "repair_type": 2,
+      "price": "299.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4975,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 171,
+      "repair_type": 1,
+      "price": "197.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4981,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 171,
+      "repair_type": 11,
+      "price": "179.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4987,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 172,
+      "repair_type": 15,
+      "price": "299.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4993,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 172,
+      "repair_type": 2,
+      "price": "299.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 4999,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 172,
+      "repair_type": 1,
+      "price": "197.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5005,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 172,
+      "repair_type": 11,
+      "price": "179.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5011,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 173,
+      "repair_type": 15,
+      "price": "359.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5017,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 173,
+      "repair_type": 2,
+      "price": "359.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5023,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 173,
+      "repair_type": 1,
+      "price": "197.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5029,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 173,
+      "repair_type": 11,
+      "price": "229.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5035,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 174,
+      "repair_type": 15,
+      "price": "359.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5041,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 174,
+      "repair_type": 2,
+      "price": "359.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5047,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 174,
+      "repair_type": 1,
+      "price": "249.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5053,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 174,
+      "repair_type": 11,
+      "price": "249.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5059,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 175,
+      "repair_type": 15,
+      "price": "529.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5065,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 175,
+      "repair_type": 2,
+      "price": "529.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5071,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 176,
+      "repair_type": 15,
+      "price": "339.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5077,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 176,
+      "repair_type": 2,
+      "price": "339.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5083,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 176,
+      "repair_type": 1,
+      "price": "249.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5089,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 176,
+      "repair_type": 11,
+      "price": "229.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5095,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 177,
+      "repair_type": 15,
+      "price": "359.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5101,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 177,
+      "repair_type": 2,
+      "price": "359.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5107,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 177,
+      "repair_type": 1,
+      "price": "249.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5113,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 177,
+      "repair_type": 11,
+      "price": "229.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5119,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 178,
+      "repair_type": 15,
+      "price": "494.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5125,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 178,
+      "repair_type": 2,
+      "price": "494.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5131,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 178,
+      "repair_type": 1,
+      "price": "289.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5137,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 178,
+      "repair_type": 11,
+      "price": "259.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5143,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 179,
+      "repair_type": 15,
+      "price": "494.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5149,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 179,
+      "repair_type": 2,
+      "price": "494.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5155,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 179,
+      "repair_type": 1,
+      "price": "299.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  },
+  {
+    "model": "price_list.pricelist",
+    "pk": 5161,
+    "fields": {
+      "store": 4,
+      "category": 1,
+      "brand": 4,
+      "device_model": 179,
+      "repair_type": 11,
+      "price": "299.99",
+      "status": "ACTIVE",
+      "created_at": "2026-02-04T22:08:21Z",
+      "updated_at": "2026-02-04T22:08:21Z"
+    }
+  }
+]

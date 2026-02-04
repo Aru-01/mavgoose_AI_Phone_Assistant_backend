@@ -1,0 +1,242 @@
+[
+    {
+        "iPads": "ipad 2",
+        "Glass": "$89.99",
+        "LCD": "$119.99",
+        "Glass/LCD": "$149.99",
+        "Battery": "$99.99",
+        "Dock/solder*": "$89.99"
+    },
+    {
+        "iPads": "ipad 3 ",
+        "Glass": "$89.99",
+        "LCD": "$119.99",
+        "Glass/LCD": "$149.99",
+        "Battery": "$99.99",
+        "Dock/solder*": "$89.99"
+    },
+    {
+        "iPads": "ipad 4",
+        "Glass": "$89.99",
+        "LCD": "$119.99",
+        "Glass/LCD": "$149.99",
+        "Battery": "$99.99",
+        "Dock/solder*": "$89.99"
+    },
+    {
+        "iPads": "ipad 5",
+        "Glass": "$99.99",
+        "LCD": "$149.99",
+        "Glass/LCD": "$169.99",
+        "Battery": "$129.99",
+        "Dock/solder*": "$164.99*"
+    },
+    {
+        "iPads": "ipad 6",
+        "Glass": "$119.99",
+        "LCD": "$149.99",
+        "Glass/LCD": "$179.99",
+        "Battery": "$129.99",
+        "Dock/solder*": "$164.99*"
+    },
+    {
+        "iPads": "ipad 7",
+        "Glass": "$144.99",
+        "LCD": "$159.99",
+        "Glass/LCD": "$219.99",
+        "Battery": "$147.99",
+        "Dock/solder*": "$164.99*"
+    },
+    {
+        "iPads": "ipad 8",
+        "Glass": "$144.99",
+        "LCD": "$179.99",
+        "Glass/LCD": "$239.99",
+        "Battery": "$147.99",
+        "Dock/solder*": "$184.99*"
+    },
+    {
+        "iPads": "ipad 9",
+        "Glass": "$144.99",
+        "LCD": "$189.99",
+        "Glass/LCD": "$239.99",
+        "Battery": "$147.99",
+        "Dock/solder*": "$184.99*"
+    },
+    {
+        "iPads": "iPad 10",
+        "Glass": "$144.99",
+        "LCD": "$209.00",
+        "Glass/LCD": "$279.99",
+        "Battery": "$147.99",
+        "Dock/solder*": "$184.99*"
+    },
+    {
+        "iPads": "ipad mini 2",
+        "Glass": "$89.99",
+        "LCD": "$119.99",
+        "Glass/LCD": "$139.99",
+        "Battery": "$99.99",
+        "Dock/solder*": "$164.99*"
+    },
+    {
+        "iPads": "ipad mini 3",
+        "Glass": "$89.99",
+        "LCD": "$119.99",
+        "Glass/LCD": "$139.99",
+        "Battery": "$99.99",
+        "Dock/solder*": "$164.99*"
+    },
+    {
+        "iPads": "ipad mini 4",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$169.99",
+        "Battery": "$149.99",
+        "Dock/solder*": "$164.99*"
+    },
+    {
+        "iPads": "ipad mini 5",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$194.99",
+        "Battery": "$149.99",
+        "Dock/solder*": "$184.99*"
+    },
+    {
+        "iPads": "ipad mini 6",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$425.00",
+        "Battery": "$249.99",
+        "Dock/solder*": "$249.99"
+    },
+    {
+        "iPads": "ipad air",
+        "Glass": "$99.99",
+        "LCD": "$149.99",
+        "Glass/LCD": "$169.99",
+        "Battery": "$129.99",
+        "Dock/solder*": "$164.99*"
+    },
+    {
+        "iPads": "ipad air 2",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$199.99",
+        "Battery": "$129.99",
+        "Dock/solder*": "$164.99*"
+    },
+    {
+        "iPads": "ipad air 3",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$239.99",
+        "Battery": "$184.99",
+        "Dock/solder*": "$199.99*"
+    },
+    {
+        "iPads": "ipad air 4",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$269.99",
+        "Battery": "$189.99",
+        "Dock/solder*": "$209.99*"
+    },
+    {
+        "iPads": "ipad air 5",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$289.99",
+        "Battery": "$189.99",
+        "Dock/solder*": "$249.99*"
+    },
+    {
+        "iPads": "ipad pro 9.7\"\"",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$197.99",
+        "Battery": "$157.99",
+        "Dock/solder*": "$179.99*"
+    },
+    {
+        "iPads": "ipad pro 10.5\"\"",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$229.99",
+        "Battery": "$167.99",
+        "Dock/solder*": "$179.99*"
+    },
+    {
+        "iPads": "ipad pro 11 1st ",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$299.99",
+        "Battery": "$197.99",
+        "Dock/solder*": "$179.99"
+    },
+    {
+        "iPads": "ipad pro 11 2nd ",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$299.99",
+        "Battery": "$197.99",
+        "Dock/solder*": "$179.99"
+    },
+    {
+        "iPads": "ipad pro 11 3rd & 4",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$359.99",
+        "Battery": "$197.99",
+        "Dock/solder*": "$229.99"
+    },
+    {
+        "iPads": "ipad pro 12.9 1st ",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$359.99",
+        "Battery": "$249.99",
+        "Dock/solder*": "$249.99*"
+    },
+    {
+        "iPads": "ipad pro 12.9 2nd ",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$529.99",
+        "Battery": "N/A",
+        "Dock/solder*": "N/A"
+    },
+    {
+        "iPads": "ipad pro 12.9 3rd ",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$339.99",
+        "Battery": "$249.99",
+        "Dock/solder*": "$229.99"
+    },
+    {
+        "iPads": "ipad pro 12.9 4th",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$359.99",
+        "Battery": "$249.99",
+        "Dock/solder*": "$229.99"
+    },
+    {
+        "iPads": "ipad pro 12.9 5th ",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$494.99",
+        "Battery": "$289.99",
+        "Dock/solder*": "$259.99"
+    },
+    {
+        "iPads": "ipad pro 12.9 6th ",
+        "Glass": "Glass/LCD",
+        "LCD": "",
+        "Glass/LCD": "$494.99",
+        "Battery": "$299.99",
+        "Dock/solder*": "$299.99"
+    }
+]
