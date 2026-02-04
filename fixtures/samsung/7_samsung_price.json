@@ -1,9 +1,9 @@
 [
   {
     "model": "price_list.pricelist",
-    "pk": 1627,
+    "pk": 1630,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 36,
@@ -16,9 +16,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1633,
+    "pk": 1636,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 36,
@@ -31,9 +31,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1639,
+    "pk": 1642,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 36,
@@ -46,9 +46,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1645,
+    "pk": 1648,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 37,
@@ -61,9 +61,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1651,
+    "pk": 1654,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 37,
@@ -76,9 +76,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1657,
+    "pk": 1660,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 37,
@@ -91,9 +91,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1663,
+    "pk": 1666,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 38,
@@ -106,9 +106,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1669,
+    "pk": 1672,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 38,
@@ -121,9 +121,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1675,
+    "pk": 1678,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 38,
@@ -136,9 +136,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1681,
+    "pk": 1684,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 39,
@@ -151,9 +151,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1687,
+    "pk": 1690,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 39,
@@ -166,9 +166,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1693,
+    "pk": 1696,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 39,
@@ -181,9 +181,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1699,
+    "pk": 1702,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 40,
@@ -196,9 +196,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1705,
+    "pk": 1708,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 40,
@@ -211,9 +211,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1711,
+    "pk": 1714,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 40,
@@ -226,9 +226,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1717,
+    "pk": 1720,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 41,
@@ -241,9 +241,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1723,
+    "pk": 1726,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 41,
@@ -256,9 +256,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1729,
+    "pk": 1732,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 41,
@@ -271,9 +271,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1735,
+    "pk": 1738,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 42,
@@ -286,9 +286,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1741,
+    "pk": 1744,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 42,
@@ -301,9 +301,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1747,
+    "pk": 1750,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 42,
@@ -316,9 +316,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1753,
+    "pk": 1756,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 43,
@@ -331,9 +331,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1759,
+    "pk": 1762,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 43,
@@ -346,9 +346,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1765,
+    "pk": 1768,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 43,
@@ -361,9 +361,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1771,
+    "pk": 1774,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 44,
@@ -376,9 +376,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1777,
+    "pk": 1780,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 44,
@@ -391,9 +391,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1783,
+    "pk": 1786,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 44,
@@ -406,9 +406,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1789,
+    "pk": 1792,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 44,
@@ -421,9 +421,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1795,
+    "pk": 1798,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 45,
@@ -436,9 +436,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1801,
+    "pk": 1804,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 45,
@@ -451,9 +451,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1807,
+    "pk": 1810,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 45,
@@ -466,9 +466,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1813,
+    "pk": 1816,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 45,
@@ -481,9 +481,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1819,
+    "pk": 1822,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 46,
@@ -496,9 +496,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1825,
+    "pk": 1828,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 46,
@@ -511,9 +511,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1831,
+    "pk": 1834,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 46,
@@ -526,9 +526,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1837,
+    "pk": 1840,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 46,
@@ -541,9 +541,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1843,
+    "pk": 1846,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 47,
@@ -556,9 +556,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1849,
+    "pk": 1852,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 47,
@@ -571,9 +571,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1855,
+    "pk": 1858,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 47,
@@ -586,9 +586,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1861,
+    "pk": 1864,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 47,
@@ -601,9 +601,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1867,
+    "pk": 1870,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 48,
@@ -616,9 +616,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1873,
+    "pk": 1876,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 48,
@@ -631,9 +631,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1879,
+    "pk": 1882,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 48,
@@ -646,9 +646,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1885,
+    "pk": 1888,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 48,
@@ -661,9 +661,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1891,
+    "pk": 1894,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 49,
@@ -676,9 +676,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1897,
+    "pk": 1900,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 49,
@@ -691,9 +691,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1903,
+    "pk": 1906,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 49,
@@ -706,9 +706,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1909,
+    "pk": 1912,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 49,
@@ -721,9 +721,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1915,
+    "pk": 1918,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 50,
@@ -736,9 +736,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1921,
+    "pk": 1924,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 50,
@@ -751,9 +751,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1927,
+    "pk": 1930,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 50,
@@ -766,9 +766,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1933,
+    "pk": 1936,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 50,
@@ -781,9 +781,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1939,
+    "pk": 1942,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 51,
@@ -796,9 +796,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1945,
+    "pk": 1948,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 51,
@@ -811,9 +811,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1951,
+    "pk": 1954,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 51,
@@ -826,9 +826,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1957,
+    "pk": 1960,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 51,
@@ -841,9 +841,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1963,
+    "pk": 1966,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 52,
@@ -856,9 +856,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1969,
+    "pk": 1972,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 52,
@@ -871,9 +871,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1975,
+    "pk": 1978,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 52,
@@ -886,9 +886,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1981,
+    "pk": 1984,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 52,
@@ -901,9 +901,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1987,
+    "pk": 1990,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 52,
@@ -916,9 +916,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1993,
+    "pk": 1996,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 53,
@@ -931,9 +931,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 1999,
+    "pk": 2002,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 53,
@@ -946,9 +946,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2005,
+    "pk": 2008,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 53,
@@ -961,9 +961,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2011,
+    "pk": 2014,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 53,
@@ -976,9 +976,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2017,
+    "pk": 2020,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 53,
@@ -991,9 +991,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2023,
+    "pk": 2026,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 54,
@@ -1006,9 +1006,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2029,
+    "pk": 2032,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 54,
@@ -1021,9 +1021,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2035,
+    "pk": 2038,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 54,
@@ -1036,9 +1036,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2041,
+    "pk": 2044,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 54,
@@ -1051,9 +1051,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2047,
+    "pk": 2050,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 54,
@@ -1066,9 +1066,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2053,
+    "pk": 2056,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 55,
@@ -1081,9 +1081,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2059,
+    "pk": 2062,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 55,
@@ -1096,9 +1096,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2065,
+    "pk": 2068,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 55,
@@ -1111,9 +1111,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2071,
+    "pk": 2074,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 55,
@@ -1126,9 +1126,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2077,
+    "pk": 2080,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 55,
@@ -1141,9 +1141,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2083,
+    "pk": 2086,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 56,
@@ -1156,9 +1156,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2089,
+    "pk": 2092,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 56,
@@ -1171,9 +1171,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2095,
+    "pk": 2098,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 56,
@@ -1186,9 +1186,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2101,
+    "pk": 2104,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 56,
@@ -1201,9 +1201,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2107,
+    "pk": 2110,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 56,
@@ -1216,9 +1216,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2113,
+    "pk": 2116,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 57,
@@ -1231,9 +1231,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2119,
+    "pk": 2122,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 57,
@@ -1246,9 +1246,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2125,
+    "pk": 2128,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 57,
@@ -1261,9 +1261,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2131,
+    "pk": 2134,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 58,
@@ -1276,9 +1276,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2137,
+    "pk": 2140,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 58,
@@ -1291,9 +1291,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2143,
+    "pk": 2146,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 58,
@@ -1306,9 +1306,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2149,
+    "pk": 2152,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 58,
@@ -1321,9 +1321,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2155,
+    "pk": 2158,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 58,
@@ -1336,9 +1336,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2161,
+    "pk": 2164,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 59,
@@ -1351,9 +1351,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2167,
+    "pk": 2170,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 59,
@@ -1366,9 +1366,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2173,
+    "pk": 2176,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 59,
@@ -1381,9 +1381,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2179,
+    "pk": 2182,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 59,
@@ -1396,9 +1396,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2185,
+    "pk": 2188,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 59,
@@ -1411,9 +1411,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2191,
+    "pk": 2194,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 60,
@@ -1426,9 +1426,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2197,
+    "pk": 2200,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 60,
@@ -1441,9 +1441,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2203,
+    "pk": 2206,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 60,
@@ -1456,9 +1456,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2209,
+    "pk": 2212,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 60,
@@ -1471,9 +1471,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2215,
+    "pk": 2218,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 60,
@@ -1486,9 +1486,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2221,
+    "pk": 2224,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 61,
@@ -1501,9 +1501,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2227,
+    "pk": 2230,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 61,
@@ -1516,9 +1516,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2233,
+    "pk": 2236,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 61,
@@ -1531,9 +1531,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2239,
+    "pk": 2242,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 61,
@@ -1546,9 +1546,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2245,
+    "pk": 2248,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 61,
@@ -1561,9 +1561,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2251,
+    "pk": 2254,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 62,
@@ -1576,9 +1576,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2257,
+    "pk": 2260,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 62,
@@ -1591,9 +1591,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2263,
+    "pk": 2266,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 62,
@@ -1606,9 +1606,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2269,
+    "pk": 2272,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 62,
@@ -1621,9 +1621,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2275,
+    "pk": 2278,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 62,
@@ -1636,9 +1636,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2281,
+    "pk": 2284,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 63,
@@ -1651,9 +1651,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2287,
+    "pk": 2290,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 63,
@@ -1666,9 +1666,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2293,
+    "pk": 2296,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 63,
@@ -1681,9 +1681,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2299,
+    "pk": 2302,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 63,
@@ -1696,9 +1696,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2305,
+    "pk": 2308,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 64,
@@ -1711,9 +1711,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2311,
+    "pk": 2314,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 64,
@@ -1726,9 +1726,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2317,
+    "pk": 2320,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 64,
@@ -1741,9 +1741,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2323,
+    "pk": 2326,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 64,
@@ -1756,9 +1756,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2329,
+    "pk": 2332,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 64,
@@ -1771,9 +1771,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2335,
+    "pk": 2338,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 65,
@@ -1786,9 +1786,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2341,
+    "pk": 2344,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 65,
@@ -1801,9 +1801,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2347,
+    "pk": 2350,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 65,
@@ -1816,9 +1816,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2353,
+    "pk": 2356,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 65,
@@ -1831,9 +1831,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2359,
+    "pk": 2362,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 65,
@@ -1846,9 +1846,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2365,
+    "pk": 2368,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 66,
@@ -1861,9 +1861,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2371,
+    "pk": 2374,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 66,
@@ -1876,9 +1876,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2377,
+    "pk": 2380,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 66,
@@ -1891,9 +1891,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2383,
+    "pk": 2386,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 66,
@@ -1906,9 +1906,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2389,
+    "pk": 2392,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 67,
@@ -1921,9 +1921,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2395,
+    "pk": 2398,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 67,
@@ -1936,9 +1936,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2401,
+    "pk": 2404,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 67,
@@ -1951,9 +1951,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2407,
+    "pk": 2410,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 67,
@@ -1966,9 +1966,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2413,
+    "pk": 2416,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 67,
@@ -1981,9 +1981,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2419,
+    "pk": 2422,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 66,
@@ -1996,9 +1996,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2425,
+    "pk": 2428,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 69,
@@ -2011,9 +2011,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2431,
+    "pk": 2434,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 69,
@@ -2026,9 +2026,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2437,
+    "pk": 2440,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 69,
@@ -2041,9 +2041,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2443,
+    "pk": 2446,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 69,
@@ -2056,9 +2056,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2449,
+    "pk": 2452,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 70,
@@ -2071,9 +2071,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2455,
+    "pk": 2458,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 70,
@@ -2086,9 +2086,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2461,
+    "pk": 2464,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 70,
@@ -2101,9 +2101,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2467,
+    "pk": 2470,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 70,
@@ -2116,9 +2116,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2473,
+    "pk": 2476,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 71,
@@ -2131,9 +2131,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2479,
+    "pk": 2482,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 71,
@@ -2146,9 +2146,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2485,
+    "pk": 2488,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 71,
@@ -2161,9 +2161,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2491,
+    "pk": 2494,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 71,
@@ -2176,9 +2176,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2497,
+    "pk": 2500,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 72,
@@ -2191,9 +2191,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2503,
+    "pk": 2506,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 72,
@@ -2206,9 +2206,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2509,
+    "pk": 2512,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 72,
@@ -2221,9 +2221,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2515,
+    "pk": 2518,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 72,
@@ -2236,9 +2236,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2521,
+    "pk": 2524,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 73,
@@ -2251,9 +2251,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2527,
+    "pk": 2530,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 73,
@@ -2266,9 +2266,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2533,
+    "pk": 2536,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 73,
@@ -2281,9 +2281,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2539,
+    "pk": 2542,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 73,
@@ -2296,9 +2296,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2545,
+    "pk": 2548,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 74,
@@ -2311,9 +2311,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2551,
+    "pk": 2554,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 74,
@@ -2326,9 +2326,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2557,
+    "pk": 2560,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 74,
@@ -2341,9 +2341,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2563,
+    "pk": 2566,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 74,
@@ -2356,9 +2356,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2569,
+    "pk": 2572,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 75,
@@ -2371,9 +2371,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2575,
+    "pk": 2578,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 75,
@@ -2386,9 +2386,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2581,
+    "pk": 2584,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 75,
@@ -2401,9 +2401,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2587,
+    "pk": 2590,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 75,
@@ -2416,9 +2416,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2593,
+    "pk": 2596,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 76,
@@ -2431,9 +2431,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2599,
+    "pk": 2602,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 76,
@@ -2446,9 +2446,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2605,
+    "pk": 2608,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 76,
@@ -2461,9 +2461,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2611,
+    "pk": 2614,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 76,
@@ -2476,9 +2476,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2617,
+    "pk": 2620,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 78,
@@ -2491,9 +2491,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2623,
+    "pk": 2626,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 78,
@@ -2506,9 +2506,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2629,
+    "pk": 2632,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 78,
@@ -2521,9 +2521,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2635,
+    "pk": 2638,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 78,
@@ -2536,9 +2536,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2641,
+    "pk": 2644,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 79,
@@ -2551,9 +2551,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2647,
+    "pk": 2650,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 79,
@@ -2566,9 +2566,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2653,
+    "pk": 2656,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 79,
@@ -2581,9 +2581,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2659,
+    "pk": 2662,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 80,
@@ -2596,9 +2596,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2665,
+    "pk": 2668,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 80,
@@ -2611,9 +2611,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2671,
+    "pk": 2674,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 80,
@@ -2626,9 +2626,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2677,
+    "pk": 2680,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 82,
@@ -2641,9 +2641,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2683,
+    "pk": 2686,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 82,
@@ -2656,9 +2656,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2689,
+    "pk": 2692,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 82,
@@ -2671,9 +2671,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2695,
+    "pk": 2698,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 83,
@@ -2686,9 +2686,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2701,
+    "pk": 2704,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 83,
@@ -2701,9 +2701,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2707,
+    "pk": 2710,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 83,
@@ -2716,9 +2716,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2713,
+    "pk": 2716,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 83,
@@ -2731,9 +2731,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2719,
+    "pk": 2722,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 85,
@@ -2746,9 +2746,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2725,
+    "pk": 2728,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 85,
@@ -2761,9 +2761,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2731,
+    "pk": 2734,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 85,
@@ -2776,9 +2776,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2737,
+    "pk": 2740,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 85,
@@ -2791,9 +2791,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2743,
+    "pk": 2746,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 86,
@@ -2806,9 +2806,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2749,
+    "pk": 2752,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 86,
@@ -2821,9 +2821,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2755,
+    "pk": 2758,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 86,
@@ -2836,9 +2836,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2761,
+    "pk": 2764,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 86,
@@ -2851,9 +2851,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2767,
+    "pk": 2770,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 84,
@@ -2866,9 +2866,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2773,
+    "pk": 2776,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 84,
@@ -2881,9 +2881,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2779,
+    "pk": 2782,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 84,
@@ -2896,9 +2896,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2785,
+    "pk": 2788,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 84,
@@ -2911,9 +2911,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2791,
+    "pk": 2794,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 87,
@@ -2926,9 +2926,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2797,
+    "pk": 2800,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 87,
@@ -2941,9 +2941,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2803,
+    "pk": 2806,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 87,
@@ -2956,9 +2956,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2809,
+    "pk": 2812,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 87,
@@ -2971,9 +2971,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2815,
+    "pk": 2818,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 88,
@@ -2986,9 +2986,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2821,
+    "pk": 2824,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 88,
@@ -3001,9 +3001,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2827,
+    "pk": 2830,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 88,
@@ -3016,9 +3016,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2833,
+    "pk": 2836,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 88,
@@ -3031,9 +3031,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2839,
+    "pk": 2842,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 89,
@@ -3046,9 +3046,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2845,
+    "pk": 2848,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 89,
@@ -3061,9 +3061,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2851,
+    "pk": 2854,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 89,
@@ -3076,9 +3076,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2857,
+    "pk": 2860,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 90,
@@ -3091,9 +3091,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2863,
+    "pk": 2866,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 90,
@@ -3106,9 +3106,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2869,
+    "pk": 2872,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 90,
@@ -3121,9 +3121,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2875,
+    "pk": 2878,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 91,
@@ -3136,9 +3136,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2881,
+    "pk": 2884,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 91,
@@ -3151,9 +3151,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2887,
+    "pk": 2890,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 91,
@@ -3166,9 +3166,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2893,
+    "pk": 2896,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 91,
@@ -3181,9 +3181,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2899,
+    "pk": 2902,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 92,
@@ -3196,9 +3196,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2905,
+    "pk": 2908,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 92,
@@ -3211,9 +3211,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2911,
+    "pk": 2914,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 92,
@@ -3226,9 +3226,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2917,
+    "pk": 2920,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 92,
@@ -3241,9 +3241,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2923,
+    "pk": 2926,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 93,
@@ -3256,9 +3256,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2929,
+    "pk": 2932,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 93,
@@ -3271,9 +3271,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2935,
+    "pk": 2938,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 93,
@@ -3286,9 +3286,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2941,
+    "pk": 2944,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 94,
@@ -3301,9 +3301,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2947,
+    "pk": 2950,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 94,
@@ -3316,9 +3316,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2953,
+    "pk": 2956,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 94,
@@ -3331,9 +3331,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2959,
+    "pk": 2962,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 94,
@@ -3346,9 +3346,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2965,
+    "pk": 2968,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 95,
@@ -3361,9 +3361,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2971,
+    "pk": 2974,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 95,
@@ -3376,9 +3376,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2977,
+    "pk": 2980,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 95,
@@ -3391,9 +3391,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2983,
+    "pk": 2986,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 95,
@@ -3406,9 +3406,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2989,
+    "pk": 2992,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 96,
@@ -3421,9 +3421,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 2995,
+    "pk": 2998,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 96,
@@ -3436,9 +3436,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3001,
+    "pk": 3004,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 96,
@@ -3451,9 +3451,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3007,
+    "pk": 3010,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 96,
@@ -3466,9 +3466,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3013,
+    "pk": 3016,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 97,
@@ -3481,9 +3481,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3019,
+    "pk": 3022,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 97,
@@ -3496,9 +3496,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3025,
+    "pk": 3028,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 97,
@@ -3511,9 +3511,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3031,
+    "pk": 3034,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 97,
@@ -3526,9 +3526,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3037,
+    "pk": 3040,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 98,
@@ -3541,9 +3541,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3043,
+    "pk": 3046,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 98,
@@ -3556,9 +3556,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3049,
+    "pk": 3052,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 98,
@@ -3571,9 +3571,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3055,
+    "pk": 3058,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 98,
@@ -3586,9 +3586,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3061,
+    "pk": 3064,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 99,
@@ -3601,9 +3601,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3067,
+    "pk": 3070,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 99,
@@ -3616,9 +3616,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3073,
+    "pk": 3076,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 99,
@@ -3631,9 +3631,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3079,
+    "pk": 3082,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 99,
@@ -3646,9 +3646,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3085,
+    "pk": 3088,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 100,
@@ -3661,9 +3661,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3091,
+    "pk": 3094,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 100,
@@ -3676,9 +3676,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3097,
+    "pk": 3100,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 100,
@@ -3691,9 +3691,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3103,
+    "pk": 3106,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 100,
@@ -3706,9 +3706,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3109,
+    "pk": 3112,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 101,
@@ -3721,9 +3721,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3115,
+    "pk": 3118,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 102,
@@ -3736,9 +3736,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3121,
+    "pk": 3124,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 102,
@@ -3751,9 +3751,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3127,
+    "pk": 3130,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 102,
@@ -3766,9 +3766,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3133,
+    "pk": 3136,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 102,
@@ -3781,9 +3781,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3139,
+    "pk": 3142,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 103,
@@ -3796,9 +3796,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3145,
+    "pk": 3148,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 103,
@@ -3811,9 +3811,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3151,
+    "pk": 3154,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 103,
@@ -3826,9 +3826,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3157,
+    "pk": 3160,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 104,
@@ -3841,9 +3841,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3163,
+    "pk": 3166,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 104,
@@ -3856,9 +3856,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3169,
+    "pk": 3172,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 104,
@@ -3871,9 +3871,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3175,
+    "pk": 3178,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 104,
@@ -3886,9 +3886,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3181,
+    "pk": 3184,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 105,
@@ -3901,9 +3901,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3187,
+    "pk": 3190,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 106,
@@ -3916,9 +3916,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3193,
+    "pk": 3196,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 105,
@@ -3931,9 +3931,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3199,
+    "pk": 3202,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 106,
@@ -3946,9 +3946,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3205,
+    "pk": 3208,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 105,
@@ -3961,9 +3961,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3211,
+    "pk": 3214,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 106,
@@ -3976,9 +3976,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3217,
+    "pk": 3220,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 105,
@@ -3991,9 +3991,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3223,
+    "pk": 3226,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 106,
@@ -4006,9 +4006,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3229,
+    "pk": 3232,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 107,
@@ -4021,9 +4021,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3235,
+    "pk": 3238,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 107,
@@ -4036,9 +4036,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3241,
+    "pk": 3244,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 107,
@@ -4051,9 +4051,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3247,
+    "pk": 3250,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 107,
@@ -4066,9 +4066,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3253,
+    "pk": 3256,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 108,
@@ -4081,9 +4081,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3259,
+    "pk": 3262,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 108,
@@ -4096,9 +4096,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3265,
+    "pk": 3268,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 108,
@@ -4111,9 +4111,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3271,
+    "pk": 3274,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 108,
@@ -4126,9 +4126,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3277,
+    "pk": 3280,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 109,
@@ -4141,9 +4141,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3283,
+    "pk": 3286,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 109,
@@ -4156,9 +4156,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3289,
+    "pk": 3292,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 109,
@@ -4171,9 +4171,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3295,
+    "pk": 3298,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 109,
@@ -4186,9 +4186,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3301,
+    "pk": 3304,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 110,
@@ -4201,9 +4201,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3307,
+    "pk": 3310,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 110,
@@ -4216,9 +4216,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3313,
+    "pk": 3316,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 110,
@@ -4231,9 +4231,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3319,
+    "pk": 3322,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 110,
@@ -4246,9 +4246,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3325,
+    "pk": 3328,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 111,
@@ -4261,9 +4261,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3331,
+    "pk": 3334,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 111,
@@ -4276,9 +4276,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3337,
+    "pk": 3340,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 111,
@@ -4291,9 +4291,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3343,
+    "pk": 3346,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 111,
@@ -4306,9 +4306,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3349,
+    "pk": 3352,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 112,
@@ -4321,9 +4321,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3355,
+    "pk": 3358,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 112,
@@ -4336,9 +4336,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3361,
+    "pk": 3364,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 112,
@@ -4351,9 +4351,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3367,
+    "pk": 3370,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 112,
@@ -4366,9 +4366,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3373,
+    "pk": 3376,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 113,
@@ -4381,9 +4381,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3379,
+    "pk": 3382,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 113,
@@ -4396,9 +4396,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3385,
+    "pk": 3388,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 113,
@@ -4411,9 +4411,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3391,
+    "pk": 3394,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 113,
@@ -4426,9 +4426,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3397,
+    "pk": 3400,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 115,
@@ -4441,9 +4441,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3403,
+    "pk": 3406,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 116,
@@ -4456,9 +4456,9 @@
   },
   {
     "model": "price_list.pricelist",
-    "pk": 3409,
+    "pk": 3412,
     "fields": {
-      "store": 4,
+      "store": 7,
       "category": 2,
       "brand": 2,
       "device_model": 114,
