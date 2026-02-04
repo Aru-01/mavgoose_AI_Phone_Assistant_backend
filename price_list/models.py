@@ -20,7 +20,7 @@ class Brand(models.Model):
         unique_together = ("name", "category")
 
     def __str__(self):
-        return f"{self.name} ({self.category.name})"
+        return f"{self.name} "
 
 
 class DeviceModel(models.Model):
@@ -30,7 +30,7 @@ class DeviceModel(models.Model):
     )
 
     def __str__(self):
-        return f"{self.brand.name} {self.name}"
+        return f" {self.name}"
 
 
 class RepairType(models.Model):

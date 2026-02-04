@@ -47,16 +47,22 @@ class RepairTypeSerializer(serializers.ModelSerializer):
 
 
 class PriceListReadSerializer(serializers.ModelSerializer):
-    brand_name = serializers.CharField(read_only=True)
-    device_model_name = serializers.CharField(read_only=True)
-    category_name = serializers.CharField(read_only=True)
-    repair_type_name = serializers.CharField(read_only=True)
+    brand_name = serializers.CharField(source="device_model.brand.name", read_only=True)
+    store_name = serializers.CharField(source="store.name", read_only=True)
+    device_model_name = serializers.CharField(
+        source="device_model.name", read_only=True
+    )
+    category_name = serializers.CharField(
+        source="device_model.brand.category.name", read_only=True
+    )
+    repair_type_name = serializers.CharField(source="repair_type.name", read_only=True)
 
     class Meta:
         model = PriceList
         fields = [
             "id",
             "store",
+            "store_name",
             "category_name",
             "brand_name",
             "device_model_name",

@@ -1,5 +1,5 @@
 from django_filters.rest_framework import DjangoFilterBackend
-from django.db.models import F
+from django.db.models import F, Q
 from rest_framework import viewsets, serializers
 from api.permissions import PriceListPermission
 from price_list.models import Category, Brand, PriceList, RepairType, DeviceModel
@@ -292,6 +292,8 @@ class PriceListViewSet(viewsets.ModelViewSet):
     # )
     permission_classes = [PriceListPermission]
     filter_backends = [DjangoFilterBackend]
+    filterset_fields = ["store", "repair_type", "device_model"]
+    search_fields = []
     # filterset_class = priceListFilter.PriceListFilter
 
     @property
@@ -314,17 +316,9 @@ class PriceListViewSet(viewsets.ModelViewSet):
 
         qs = PriceList.objects.select_related(
             "store",
-            "device_model",
-            "device_model__brand",
             "device_model__brand__category",
             "repair_type",
-        ).annotate(
-            brand_name=F("device_model__brand__name"),
-            device_model_name=F("device_model__name"),
-            category_name=F("device_model__brand__category__name"),
-            repair_type_name=F("repair_type__name"),
         )
-
         if user.role in [UserRole.STAFF, UserRole.STORE_MANAGER]:
             qs = qs.filter(store=user.store)
 
