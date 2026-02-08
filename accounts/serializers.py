@@ -54,6 +54,7 @@ class SelfProfileSerializer(serializers.ModelSerializer):
             "email",
             "first_name",
             "last_name",
+            "store",
             "profile_image",
             "state_location",
             "role",
@@ -88,7 +89,11 @@ class LoginSerializer(serializers.Serializer):
     password = serializers.CharField(write_only=True)
 
     def validate(self, data):
-        user = authenticate(email=data["email"], password=data["password"])
+        user = authenticate(
+            email=data["email"],
+            password=data["password"],
+            user=data["store"] if "store" in data else None,
+        )
 
         if not user:
             raise serializers.ValidationError("Invalid email or password")
