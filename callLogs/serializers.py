@@ -5,6 +5,7 @@ from callLogs.models import (
     CallSession,
     CallTranscript,
 )
+from price_list.models import RepairType
 
 
 class CallTranscriptSerializer(serializers.ModelSerializer):
@@ -15,8 +16,9 @@ class CallTranscriptSerializer(serializers.ModelSerializer):
 
 
 class CallSessionSerializer(serializers.ModelSerializer):
-    transcripts = CallTranscriptSerializer(many=True)
+    transcripts = CallTranscriptSerializer(many=True, required=False)
     issue_name = serializers.ReadOnlyField(source="issue.name")
+    issue = serializers.CharField(required=False, allow_blank=True)
 
     class Meta:
         model = CallSession
@@ -39,17 +41,24 @@ class CallSessionSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         transcripts_data = validated_data.pop("transcripts", [])
+        issue_name = validated_data.pop("issue", None)
+
+        if issue_name:
+            try:
+                repair_type = RepairType.objects.get(name__iexact=issue_name)
+                validated_data["issue"] = repair_type
+            except RepairType.DoesNotExist:
+                validated_data["issue"] = None
 
         try:
             with transaction.atomic():
                 call = CallSession.objects.create(**validated_data)
 
-                transcripts = [
-                    CallTranscript(call=call, timestamp=timezone.now(), **t)
-                    for t in transcripts_data
-                ]
-
-                if transcripts:
+                if transcripts_data:
+                    transcripts = [
+                        CallTranscript(call=call, timestamp=timezone.now(), **t)
+                        for t in transcripts_data
+                    ]
                     CallTranscript.objects.bulk_create(transcripts)
 
             return call
