@@ -36,7 +36,9 @@ class NotificationListAPIView(ListAPIView):
         return super().get(request, *args, **kwargs)
 
     def get_queryset(self):
-        qs = Notification.objects.filter(recipient=self.request.user)
+        user = self.request.user
+
+        qs = Notification.objects.filter(recipient=user)
 
         category = self.request.query_params.get("category")
         status = self.request.query_params.get("status")
@@ -49,7 +51,7 @@ class NotificationListAPIView(ListAPIView):
         elif status == "unread":
             qs = qs.filter(is_read=False)
 
-        return qs
+        return qs.order_by("-created_at")
 
 
 class NotificationMarkReadAPIView(APIView):
