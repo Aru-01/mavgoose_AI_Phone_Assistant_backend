@@ -15,7 +15,7 @@ SECRET_KEY = "django-insecure-zji$-jha5m-%b!^5%*8ho#x^f=bdvr$0sg)o^oj6+f#3^%#kmu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["172.252.13.97", "127.0.0.1"]
+ALLOWED_HOSTS = ["172.252.13.97", "127.0.0.1", ".ngrok-free.dev"]
 
 
 # Application definition
@@ -144,7 +144,7 @@ AUTH_USER_MODEL = "accounts.User"
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
-
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",

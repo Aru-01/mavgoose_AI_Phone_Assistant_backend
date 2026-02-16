@@ -9,8 +9,8 @@ from callLogs.serializers import CallSessionSerializer
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from rest_framework.response import Response
-from django.db.models.functions import TruncDay
-from django.db.models import Count, Avg
+from django.db.models.functions import TruncDay, TruncDate, TruncMonth
+from django.db.models import Count, Avg, F
 from store.models import Store
 import calendar
 
@@ -241,20 +241,16 @@ class StoreCallSummaryView(APIView):
 
 class CallTrendsView(APIView):
     """
-    Calls trend for this week (last 7 days)
+    Call trends API with dynamic range:
+    - this-week, this-month, this-year
     Role-based:
     - Staff / Store Manager: only their store
-    - Super Admin: all stores, optionally filter by store query param
+    - Super Admin: optionally filter by store
     """
 
     @swagger_auto_schema(
-        operation_summary="Call Trends (Last 7 Days)",
-        operation_description=(
-            "Retrieve call trends for the last 7 days. Day-wise (Mon, Tue, ...) with total calls.\n\n"
-            "Role-based:\n"
-            "- Staff / Store Manager: Only their store\n"
-            "- Super Admin: Can optionally filter by store using `store` query param"
-        ),
+        operation_summary="Call Trends",
+        operation_description="Retrieve call trends for selected range",
         tags=["Dashboard"],
         manual_parameters=[
             openapi.Parameter(
@@ -262,6 +258,13 @@ class CallTrendsView(APIView):
                 openapi.IN_QUERY,
                 description="Store ID to filter (Super Admin only)",
                 type=openapi.TYPE_INTEGER,
+                required=False,
+            ),
+            openapi.Parameter(
+                "range",
+                openapi.IN_QUERY,
+                description="Data range: today / this-week / this-month / this-year",
+                type=openapi.TYPE_STRING,
                 required=False,
             ),
         ],
@@ -279,43 +282,89 @@ class CallTrendsView(APIView):
         },
     )
     def get(self, request):
-        today = timezone.now().date()
-        week_ago = today - timedelta(days=6)
         user = request.user
+        today = timezone.now().date()
+        range_param = request.query_params.get("range", "this-week")
+        store_id = request.query_params.get("store")
 
-        # base queryset
-        qs = CallSession.objects.filter(
-            started_at__date__gte=week_ago,
-            started_at__date__lte=today,
-        )
+        # Determine start date and aggregation function
+        if range_param == "today":
+            start_date = today
+            trunc_func = TruncDay
+            days = [calendar.day_abbr[today.weekday()]]
+        elif range_param == "this-week":
+            start_date = today - timedelta(days=today.weekday())
+            trunc_func = TruncDay
+            days = [
+                calendar.day_abbr[(start_date + timedelta(days=i)).weekday()]
+                for i in range(7)
+            ]
+        elif range_param == "this-month":
+            start_date = today.replace(day=1)
+            trunc_func = TruncDate
+            days_in_month = (today - start_date).days + 1
+            days = [(start_date + timedelta(days=i)).day for i in range(days_in_month)]
+        elif range_param == "this-year":
+            start_date = today.replace(month=1, day=1)
+            trunc_func = TruncMonth
+            days = [calendar.month_abbr[m] for m in range(1, today.month + 1)]
+        else:
+            start_date = today - timedelta(days=6)
+            trunc_func = TruncDay
+            days = [
+                calendar.day_abbr[(start_date + timedelta(days=i)).weekday()]
+                for i in range(7)
+            ]
 
-        # role-based filter
-        if user.role in [UserRole.STAFF, UserRole.STORE_MANAGER]:
+        # Base queryset
+        qs = CallSession.objects.filter(started_at__date__gte=start_date)
+        if user.role in ["STAFF", "STORE_MANAGER"]:
             qs = qs.filter(store=user.store)
-        elif user.role == UserRole.SUPER_ADMIN:
-            store_id = request.query_params.get("store")
-            if store_id:
-                qs = qs.filter(store_id=store_id)
+        elif user.role == "SUPER_ADMIN" and store_id:
+            qs = qs.filter(store_id=store_id)
 
-        # annotate day and count
+        # Aggregate calls
         calls = (
-            qs.annotate(day=TruncDay("started_at"))
-            .values("day")
+            qs.annotate(period=trunc_func("started_at"))
+            .values("period")
             .annotate(count=Count("id"))
-            .order_by("day")
+            .order_by("period")
         )
 
-        # prepare day labels Mon, Tue, ...
-        trend = {}
-        for i in range(7):
-            day = week_ago + timedelta(days=i)
-            label = calendar.day_abbr[day.weekday()]  # Mon, Tue, ...
-            trend[label] = 0
+        # Prepare trend dict
+        # trend = {str(d): 0 for d in days}
+
+        # for c in calls:
+        #     if range_param in ["this-week", "today"]:
+        #         label = calendar.day_abbr[c["period"].weekday()]
+        #     elif range_param == "this-month":
+        #         label = c["period"].day
+        #     elif range_param == "this-year":
+        #         label = calendar.month_abbr[c["period"].month]
+        #     trend[label] = c["count"]
+
+        trend = []
+
+        for d in days:
+            trend.append({"label": str(d), "count": 0})  # always string
+
+        # Fill counts from queryset
 
         for c in calls:
-            label = calendar.day_abbr[c["day"].weekday()]
-            trend[label] = c["count"]
+            if range_param in ["this-week", "today"]:
+                label = calendar.day_abbr[c["period"].weekday()]
+            elif range_param == "this-month":
+                label = str(c["period"].day)
+            elif range_param == "this-year":
+                label = calendar.month_abbr[c["period"].month]
 
-        total_calls = sum(trend.values())
+            # find and update in trend
+            for item in trend:
+                if item["label"] == label:
+                    item["count"] = c["count"]
+                    break
+
+        # Calculate total calls after filling trend
+        total_calls = sum(item["count"] for item in trend)
 
         return Response({"total_calls": total_calls, "trend": trend})
