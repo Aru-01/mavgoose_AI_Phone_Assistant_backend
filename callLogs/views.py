@@ -158,6 +158,13 @@ class StoreCallSummaryView(APIView):
                 type=openapi.TYPE_INTEGER,
                 required=False,
             ),
+            openapi.Parameter(
+                "range",
+                openapi.IN_QUERY,
+                description="Time range: today, this-week, this-month, this-year",
+                type=openapi.TYPE_STRING,
+                required=False,
+            ),
         ],
         responses={
             200: openapi.Schema(
@@ -184,13 +191,12 @@ class StoreCallSummaryView(APIView):
         today = timezone.now().date()
         user = request.user
 
-        store_id = request.query_params.get("store_id")  # <-- query param
+        store_id = request.query_params.get("store_id")
+        range_param = request.query_params.get("range", "today")
 
         if user.role in [UserRole.STAFF, UserRole.STORE_MANAGER]:
-            # staff/store_manager: শুধু তাদের store
             stores = Store.objects.filter(id=user.store.id)
         else:
-            # super admin
             if store_id:
                 stores = Store.objects.filter(id=store_id)
             else:
@@ -198,7 +204,30 @@ class StoreCallSummaryView(APIView):
 
         data = []
         for store in stores:
-            calls = CallSession.objects.filter(store=store, started_at__date=today)
+            # calls = CallSession.objects.filter(store=store, started_at__date=today)
+            now = timezone.now()
+
+            if range_param == "today":
+                start_date = now.date()
+            elif range_param == "this-week":
+                start_date = (
+                    now - timedelta(days=now.weekday())
+                ).date()  # Monday of current week
+            elif range_param == "this-month":
+                start_date = now.replace(day=1).date()  # first day of month
+            elif range_param == "this-year":
+                start_date = now.replace(month=1, day=1).date()  # Jan 1st of year
+            else:
+                start_date = now.date()
+
+            if range_param == "today":
+                calls = CallSession.objects.filter(
+                    store=store, started_at__date=start_date
+                )
+            else:
+                calls = CallSession.objects.filter(
+                    store=store, started_at__date__gte=start_date
+                )
 
             total_calls = calls.count()
             ai_handled = calls.filter(call_type="AI_RESOLVED").count()
@@ -227,7 +256,7 @@ class StoreCallSummaryView(APIView):
                 {
                     "store_id": store.id,
                     "store_name": store.name,
-                    "total_calls_today": total_calls,
+                    "total_calls": total_calls,
                     "ai_handled": ai_handled,
                     "warm_transfer": warm_transfer,
                     "appointments_booked": appointments,
