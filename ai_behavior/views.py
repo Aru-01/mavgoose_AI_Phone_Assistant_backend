@@ -9,6 +9,8 @@ from ai_behavior.serializers import (
 )
 from api.permissions import AIBehaviorPermission
 from drf_yasg.utils import swagger_auto_schema
+import threading
+from ai_behavior.services.ai_system_trigger import trigger_ai_system_update
 
 
 ###### --> Custom mixin ##########
@@ -72,6 +74,7 @@ class AutoTransferKeywordListCreateView(
         if not ai_behavior_config:
             raise serializers.ValidationError("Invalid store or AI config not found.")
         serializer.save(ai_behavior_config=ai_behavior_config)
+        threading.Thread(target=trigger_ai_system_update).start()
 
 
 class AutoTransferKeywordDetailView(
@@ -125,6 +128,10 @@ class AutoTransferKeywordDetailView(
             return AutoTransferKeyword.objects.none()
         return AutoTransferKeyword.objects.filter(ai_behavior_config=ai_behavior_config)
 
+    def perform_destroy(self, instance):
+        instance.delete()
+        threading.Thread(target=trigger_ai_system_update).start()
+
 
 class AIBehaviorConfigCreateView(generics.CreateAPIView):
     serializer_class = AIBehaviorConfigSerializer
@@ -150,6 +157,7 @@ class AIBehaviorConfigCreateView(generics.CreateAPIView):
             )
 
         serializer.save(store_id=store_id)
+        threading.Thread(target=trigger_ai_system_update).start()
 
 
 class AIBehaviorConfigDetailView(generics.RetrieveUpdateAPIView):
@@ -190,3 +198,7 @@ class AIBehaviorConfigDetailView(generics.RetrieveUpdateAPIView):
             )
             .all()
         )
+
+    def perform_update(self, serializer):
+        serializer.save()
+        threading.Thread(target=trigger_ai_system_update).start()

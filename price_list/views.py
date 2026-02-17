@@ -5,7 +5,11 @@ from api.permissions import PriceListPermission
 from price_list.models import Category, Brand, PriceList, RepairType, DeviceModel
 from price_list import serializers as sz, priceListFilter
 from accounts.models import UserRole
+from price_list.services.ai_trigger import trigger_ai_rag_update
+
+# from services.ai_trigger import trigger_ai_rag_update
 from drf_yasg.utils import swagger_auto_schema
+import threading
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
@@ -351,6 +355,11 @@ class PriceListViewSet(viewsets.ModelViewSet):
                 brand=device.brand,
                 store_id=store_id,
             )
+        threading.Thread(target=trigger_ai_rag_update).start()
+
+    def perform_update(self, serializer):
+        serializer.save()
+        threading.Thread(target=trigger_ai_rag_update).start()
 
     def get_serializer_class(self):
         if self.action in ["list", "retrieve"]:
