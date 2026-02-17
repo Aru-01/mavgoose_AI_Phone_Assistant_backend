@@ -4,7 +4,7 @@ from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.views import TokenRefreshView
 from rest_framework.views import APIView
-from rest_framework import mixins, status
+from rest_framework import mixins, status, permissions
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from api.permissions import IsAdminUserRole
@@ -313,87 +313,44 @@ class ChangePasswordView(APIView):
 
 
 class ForgotPasswordView(APIView):
-    authentication_classes = []
-    permission_classes = []
+    permission_classes = [permissions.AllowAny]
 
-    @swagger_auto_schema(
-        operation_summary="Request password reset OTP",
-        request_body=sz.ForgotPasswordSerializer,
-        responses={200: openapi.Response("OTP sent to email")},
-        tags=["Auth / Account"],
-    )
     def post(self, request):
         serializer = sz.ForgotPasswordSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
-        return Response(
-            {"message": "OTP sent to email"},
-            status=status.HTTP_200_OK,
-        )
+        return Response({"message": "OTP sent to email"}, status=status.HTTP_200_OK)
 
 
 class VerifyOtpView(APIView):
-    authentication_classes = []
-    permission_classes = []
+    permission_classes = [permissions.AllowAny]
 
-    @swagger_auto_schema(
-        operation_summary="Verify OTP for password reset",
-        request_body=sz.VerifyOtpSerializer,
-        responses={200: openapi.Response("OTP verified")},
-        tags=["Auth / Account"],
-    )
     def post(self, request):
         serializer = sz.VerifyOtpSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        serializer.save()
-
-        return Response(
-            {"message": "OTP verified"},
-            status=status.HTTP_200_OK,
-        )
+        return Response({"message": "OTP verified"}, status=status.HTTP_200_OK)
 
 
 class ResetPasswordView(APIView):
-    authentication_classes = []
-    permission_classes = []
+    permission_classes = [permissions.AllowAny]
 
-    @swagger_auto_schema(
-        operation_summary="Reset password",
-        request_body=sz.ResetPasswordSerializer,
-        responses={200: openapi.Response("Password reset successfully")},
-        tags=["Auth / Account"],
-    )
     def post(self, request):
         serializer = sz.ResetPasswordSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
         return Response(
             {"message": "Password reset successfully"}, status=status.HTTP_200_OK
         )
 
 
 class ResendOtpView(APIView):
-    authentication_classes = []
+    permission_classes = [permissions.AllowAny]
 
-    permission_classes = []
-
-    @swagger_auto_schema(
-        operation_summary="Resend OTP for password reset",
-        request_body=sz.ResendOtpSerializer,
-        responses={200: openapi.Response("OTP sent to email")},
-        tags=["Auth / Account"],
-    )
     def post(self, request):
         serializer = sz.ResendOtpSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-
-        return Response(
-            {"message": "OTP sent to email"},
-            status=status.HTTP_200_OK,
-        )
+        return Response({"message": "OTP sent to email"}, status=status.HTTP_200_OK)
 
 
 class CustomTokenRefreshView(TokenRefreshView):

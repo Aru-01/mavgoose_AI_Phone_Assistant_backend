@@ -1,7 +1,7 @@
 from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import F, Q
 from rest_framework import viewsets, serializers
-from api.permissions import PriceListPermission, PriceListReadOnlyPermission
+from api.permissions import PriceListPermission
 from price_list.models import Category, Brand, PriceList, RepairType, DeviceModel
 from price_list import serializers as sz, priceListFilter
 from accounts.models import UserRole
@@ -287,10 +287,10 @@ class PriceListViewSet(viewsets.ModelViewSet):
     - Create / Update / Delete price list entries (write)
     """
 
-    # queryset = PriceList.objects.select_related(
-    #     "category", "brand", "device_model", "device_model__brand", "repair_type"
-    # )
-    # permission_classes = [PriceListPermission | PriceListReadOnlyPermission]
+    queryset = PriceList.objects.select_related(
+        "category", "brand", "device_model", "device_model__brand", "repair_type"
+    )
+    permission_classes = [PriceListPermission]
     filter_backends = [DjangoFilterBackend]
     filterset_fields = ["store", "repair_type", "device_model"]
     search_fields = []
@@ -319,12 +319,8 @@ class PriceListViewSet(viewsets.ModelViewSet):
             "device_model__brand__category",
             "repair_type",
         )
-        if user.is_authenticated and user.role in [
-            UserRole.STAFF,
-            UserRole.STORE_MANAGER,
-        ]:
+        if user.role in [UserRole.STAFF, UserRole.STORE_MANAGER]:
             qs = qs.filter(store=user.store)
-
         return qs
 
     def perform_create(self, serializer):

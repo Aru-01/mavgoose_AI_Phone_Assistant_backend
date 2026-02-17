@@ -1,10 +1,15 @@
 from django.contrib.auth import authenticate
-from django.core.cache import cache
 from django.utils import timezone
 from rest_framework import serializers
 from rest_framework_simplejwt.tokens import RefreshToken
-from accounts.models import User
-from accounts.utils import human_readable_time_ago, send_otp_email
+from accounts.models import User, PasswordResetOTP
+from accounts.utils import (
+    human_readable_time_ago,
+    can_resend_otp,
+    create_otp,
+    verify_otp,
+    send_otp_email,
+)
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -136,40 +141,41 @@ class ForgotPasswordSerializer(serializers.Serializer):
     email = serializers.EmailField()
 
     def validate_email(self, value):
+        value = value.strip().lower()
         if not User.objects.filter(email=value).exists():
             raise serializers.ValidationError("User not found")
         return value
 
     def save(self):
-        email = self.validated_data["email"]
+        user = User.objects.get(email=self.validated_data["email"])
 
-        send_otp_email(email)
-        # print("OTP:", otp)  # dev only
+        if not can_resend_otp(user):
+            raise serializers.ValidationError(
+                "Please wait 30 seconds before resending OTP"
+            )
+
+        otp_obj = create_otp(user)
+        send_otp_email(user.email, otp_obj.code)
 
 
 class VerifyOtpSerializer(serializers.Serializer):
     email = serializers.EmailField()
-    otp = serializers.CharField()
+    otp = serializers.CharField(max_length=6)
 
     def validate(self, data):
-        email = data["email"]
-        otp = data["otp"]
+        email = data["email"].strip().lower()
+        otp_code = data["otp"]
 
-        cached_otp = cache.get(f"pwd_reset_otp_{email}")
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            raise serializers.ValidationError("User not found")
 
-        if not cached_otp:
-            raise serializers.ValidationError("OTP expired")
-
-        if cached_otp != otp:
-            raise serializers.ValidationError("Invalid OTP")
+        is_valid, message = verify_otp(user, otp_code)
+        if not is_valid:
+            raise serializers.ValidationError(message)
 
         return data
-
-    def save(self):
-        email = self.validated_data["email"]
-
-        cache.delete(f"pwd_reset_otp_{email}")
-        cache.set(f"pwd_reset_verified_{email}", True, timeout=600)
 
 
 class ResetPasswordSerializer(serializers.Serializer):
@@ -178,28 +184,30 @@ class ResetPasswordSerializer(serializers.Serializer):
     confirm_password = serializers.CharField(write_only=True)
 
     def validate(self, data):
-        # Check if passwords match
         if data["new_password"] != data["confirm_password"]:
             raise serializers.ValidationError("Passwords do not match")
 
-        # Check if OTP was verified
-        verified = cache.get(f"pwd_reset_verified_{data['email']}")
-        if not verified:
-            raise serializers.ValidationError("OTP not verified or expired")
+        email = data["email"].strip().lower()
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            raise serializers.ValidationError("User not found")
+
+        # Check if OTP verified
+        if not PasswordResetOTP.objects.filter(user=user, verified=True).exists():
+            raise serializers.ValidationError("OTP not verified")
 
         return data
 
     def save(self):
-        email = self.validated_data["email"]
+        email = self.validated_data["email"].strip().lower()
         new_password = self.validated_data["new_password"]
-
         user = User.objects.get(email=email)
         user.set_password(new_password)
         user.save()
 
-        # Delete OTP verified flag after password reset
-        cache.delete(f"pwd_reset_verified_{email}")
-
+        # Delete OTP after successful reset
+        PasswordResetOTP.objects.filter(user=user).delete()
         return user
 
 
@@ -207,22 +215,18 @@ class ResendOtpSerializer(serializers.Serializer):
     email = serializers.EmailField()
 
     def validate_email(self, value):
+        value = value.strip().lower()
         if not User.objects.filter(email=value).exists():
             raise serializers.ValidationError("User not found")
         return value
 
     def save(self):
-        email = self.validated_data["email"]
-        cooldown_key = f"pwd_reset_resend_{email}"
+        user = User.objects.get(email=self.validated_data["email"])
 
-        # Check if user can resend OTP (30 sec cooldown)
-        if cache.get(cooldown_key):
+        if not can_resend_otp(user):
             raise serializers.ValidationError(
-                "OTP recently sent. Please wait 30 seconds before resending."
+                "Please wait 30 seconds before resending OTP"
             )
 
-        # Send OTP again
-        send_otp_email(email)
-
-        # Set 30 sec cooldown
-        cache.set(cooldown_key, True, timeout=30)
+        otp_obj = create_otp(user)
+        send_otp_email(user.email, otp_obj.code)
