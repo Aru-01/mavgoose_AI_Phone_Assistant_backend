@@ -74,7 +74,7 @@ def verify_otp(user, otp_code):
 
 
 def send_otp_email(email, otp):
-    subject = "🔁 Reset Your Password"
+    subject = "Verify Your Password"
     html_content = render_to_string("emails/verify_email.html", {"OTP": otp})
 
     email_msg = EmailMessage(
